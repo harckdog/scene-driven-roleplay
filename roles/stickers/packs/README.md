@@ -1,0 +1,1 @@
+Sticker packs are intentionally excluded from this public architecture snapshot. Add a reviewed manifest and licensed image files locally if you have the rights to use them. The selector can return `null` when no asset is available.

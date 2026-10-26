@@ -1,0 +1,12 @@
+# Python 3.11/3.12 recommended. Install with: python -m pip install -r requirements.txt
+gradio>=5.0,<7
+fastapi>=0.110,<1
+uvicorn>=0.27,<1
+openai>=1.0,<3
+python-dotenv>=1.0,<2
+PyYAML>=6.0,<7
+
+# Local semantic retrieval. The project does not require torchvision.
+torch>=2.0
+sentence-transformers>=5.0,<6
+transformers>=4.51,<6

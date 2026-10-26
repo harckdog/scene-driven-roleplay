@@ -1,0 +1,7 @@
+# Lightweight verification dependencies; no model weights or GPU packages.
+fastapi>=0.110,<1
+openai>=1.0,<3
+python-dotenv>=1.0,<2
+PyYAML>=6.0,<7
+httpx>=0.25,<1
+pytest>=7,<9

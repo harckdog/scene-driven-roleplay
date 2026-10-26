@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+._*
+__MACOSX/
+models/
+data/
+assets/
+momotalk-main/
+Base-56/
+Background/
+local_data/*
