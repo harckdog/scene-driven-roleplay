@@ -1,0 +1,1325 @@
+# 已确认的33张语义标注；此文件是运行清单的人工审核来源。
+schema_version: 1
+id: tendou_kei
+display_name: 天童凯伊表情包
+stickers:
+- id: kei_neutral
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_01.png
+  label: 平静／自然陈述
+  description: 睁眼闭口、神态平静，无明显脸红或汗滴；可配自然说明、询问或克制评论，台词提及问题和不满也不等于表情正在生气。
+  emotion_tags:
+  - neutral
+  - composed
+  - restrained
+  fallback_cues: []
+  enabled: true
+  affect:
+    primary: neutral
+    secondary:
+    - composed
+  intensity: mild
+  dialogue_act:
+  - statement
+  - question
+  - comment
+  expression_style:
+  - restrained
+  usage_scenarios:
+  - 平静说明事实或提供判断
+  - 不改变平静神态的轻微抱怨或反问
+  avoid_when:
+  - 明显笑意、脸红、冒汗或激烈情绪
+  - 仅因为没有别的贴图合适而强制发送此图
+  contrast_with:
+    kei_serious: 05号眉形略有变化；两者区别细微，没有明确演出依据时不强设意图区别。
+    kei_puzzled: 02号小幅张口；01号闭口。均可配完整台词。
+- id: kei_puzzled
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_02.png
+  label: 小幅开口／询问与说明
+  description: 小幅张口、睁眼且无明显情绪符号；适合普通询问、回应和整理思路后的说明，不限定为困惑或惊讶，也不要求刻意放低音量。
+  emotion_tags:
+  - neutral
+  - thoughtful
+  - speaking
+  affect:
+    primary: neutral
+    secondary:
+    - thoughtful
+  intensity: mild
+  dialogue_act:
+  - question
+  - response
+  - explanation
+  expression_style:
+  - speaking
+  usage_scenarios:
+  - 询问老师状态或回应呼唤
+  - 提出判断和补充资料
+  - 整理思路后自然开口
+  avoid_when:
+  - 突然受惊或明显羞态
+  - 仅凭问号把问题一律当作困惑
+  fallback_cues:
+  - 话说
+  - 说到底
+  - 我看
+  - 给你
+  - 这样处理
+  enabled: true
+  contrast_with:
+    kei_surprised_speaking: 11号张口更明显、眉形略紧；两者都能询问和说明，不强分知识问答与连续陈述。
+    kei_neutral: 01号闭口，02号小幅张口；不按有无台词区分。
+- id: kei_slight_smile
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_03.png
+  label: 浅笑／带笑交流
+  description: 睁眼闭口浅笑、无明显汗滴；适合温和交流、带笑评论或安抚。可以说不满的话，也不因轻声二字就断定此表情。
+  emotion_tags:
+  - gentle
+  - pleased
+  - smile
+  - slight_smile
+  - restrained
+  fallback_cues:
+  - 轻松回应
+  - 小小的赞同
+  - 温和地接受
+  - 柔和
+  - 轻声
+  enabled: true
+  affect:
+    primary: gentle
+    secondary:
+    - pleased
+  intensity: mild
+  dialogue_act:
+  - response
+  - comment
+  - reassurance
+  - suggestion
+  expression_style:
+  - smile
+  - restrained
+  usage_scenarios:
+  - 温和建议休息或收束工作
+  - 带笑评价或轻微吐槽
+  - 放松地安抚老师
+  avoid_when:
+  - 只有轻声或压低声音，没有笑意依据
+  - 明显脸红冒汗的羞恼
+  - 严厉怒视
+  contrast_with:
+    kei_shy_smile: 03与07均为睁眼闭口浅笑，差异细微；不强设03日常、07亲密或是否被夸的分工。
+    kei_happy_smile: 08号闭眼且脸红线更明显；03号睁眼。
+- id: kei_uneasy
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_04.png
+  label: 不自在／克制担忧
+  description: 睁眼闭口、眉形略紧并带单侧小汗滴，无明显脸红；可用于对夸张言行不自在、轻微抱怨或担忧，不要求视线游移，也不等于强烈害羞。
+  emotion_tags:
+  - troubled
+  - uneasy
+  - worried
+  - restrained
+  fallback_cues:
+  - 尴尬
+  - 有些为难
+  - 不知如何回答
+  enabled: true
+  affect:
+    primary: troubled
+    secondary:
+    - uneasy
+    - worried
+  intensity: mild
+  dialogue_act:
+  - response
+  - question
+  - comment
+  - explanation
+  expression_style:
+  - restrained
+  usage_scenarios:
+  - 面对夸张道谢或失礼说法感到不自在
+  - 担心老师过劳时谨慎询问
+  - 对安排是否妥当提出疑问
+  avoid_when:
+  - 明显脸红冒汗的害羞
+  - 强烈惊慌或螺旋眼混乱
+  - 平静微笑
+  contrast_with:
+    kei_nervous_troubled: 06号汗滴更大更深、嘴线略僵；04号汗滴较小。用途可重叠，不把担忧与困扰做绝对分工。
+    kei_embarrassed_avoiding_gaze: 21号有明显脸红、双侧汗滴和侧视；04号没有这些强羞态特征。
+- id: kei_serious
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_05.png
+  label: 平静收敛／认真回应
+  description: 睁眼闭口、无明显情绪附加符号，眉形与01号略有不同；可用于收敛表情的认真回应。与01号语义重叠，不凭图片推断冷淡、敌意或更高风险。
+  emotion_tags:
+  - neutral
+  - reserved
+  - focused
+  - restrained
+  fallback_cues:
+  - 认真说明
+  - 郑重
+  - 需要严肃对待
+  enabled: true
+  affect:
+    primary: neutral
+    secondary:
+    - reserved
+    - focused
+  intensity: mild
+  dialogue_act:
+  - statement
+  - response
+  - explanation
+  expression_style:
+  - restrained
+  usage_scenarios:
+  - 收敛表情地认真回应
+  - 保持平静的说明或倾听
+  avoid_when:
+  - 明显怒视、羞态或微笑
+  - 仅因出现危险或必须等词就推定为此图
+  contrast_with:
+    kei_neutral: 两者视觉差异细微，当前没有场景证据支持固定意图分工；01、05可重叠。
+    kei_surprised_speaking: 11号张口且眉形更紧，05号闭口；不决定能否说话。
+- id: kei_nervous_troubled
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_06.png
+  label: 为难冒汗／困扰回应
+  description: 睁眼闭口、眉形略紧、嘴线略僵且带较大单侧汗滴；适合对麻烦或荒唐说法感到困扰、无奈或不知如何回应，不要求即将出错或明显焦虑。
+  emotion_tags:
+  - troubled
+  - uneasy
+  - resigned
+  - strained
+  fallback_cues:
+  - 紧张
+  - 担心
+  - 有点麻烦
+  enabled: true
+  affect:
+    primary: troubled
+    secondary:
+    - uneasy
+    - resigned
+  intensity: medium
+  dialogue_act:
+  - question
+  - complaint
+  - comment
+  - response
+  expression_style:
+  - strained
+  usage_scenarios:
+  - 对不断增加的麻烦感到无奈
+  - 听到荒唐理由后为难地反问
+  - 冒汗但仍能完整表达的困扰回应
+  avoid_when:
+  - 没有外显困扰的普通问题
+  - 明显脸红的局促回应
+  - 强烈危险反应或崩溃
+  contrast_with:
+    kei_uneasy: 06号汗滴更大更深，嘴线略不同；用途可重叠，medium只是外显差异的暂定分档。
+    kei_flustered_nervous: 13号明显脸红且张口；06号无明显脸红、闭口，不应仅凭紧张一词混选。
+- id: kei_shy_smile
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_07.png
+  label: 微红浅笑／温和亲近
+  description: 睁眼、轻微脸红、闭口浅笑且无明显汗滴；适合温和提醒、带笑交流、克制接受或主动表达亲近，不要求当前正在被夸奖或明显害羞。
+  emotion_tags:
+  - gentle
+  - pleased
+  - shy
+  - smile
+  - restrained
+  affect:
+    primary: gentle
+    secondary:
+    - pleased
+    - shy
+  intensity: mild
+  dialogue_act:
+  - reminder
+  - reassurance
+  - admission
+  - acceptance
+  - comment
+  expression_style:
+  - smile
+  - restrained
+  usage_scenarios:
+  - 温和地提醒老师照顾自己
+  - 带着笑意谈论意见或不满
+  - 克制地接受关心或主动表达心意
+  avoid_when:
+  - 明显冒汗、慌张反驳
+  - 螺旋眼或空白眼式夸张演出
+  - 仅出现夸奖话题、却没有柔和或含蓄笑意
+  contrast_with:
+    kei_flustered_embarrassed: 07号闭口浅笑、眉形舒展；12号张口、脸红更明显、眉形较紧。不用‘是否收到夸奖’区分。
+    kei_incredulous_embarrassed: 16号闭口但嘴角下压、眉形紧，偏别扭不满；07号明确带笑。
+  fallback_cues:
+  - 被夸奖
+  - 被关心
+  - 有些不好意思
+  - 也不是不能接受
+  enabled: true
+- id: kei_happy_smile
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_08.png
+  label: 闭眼微笑／温暖回应
+  description: 闭眼、脸红、闭口微笑，神态舒展；适合愉快交流、温和提醒或安心回应，不要求遇到好消息或很兴奋。
+  emotion_tags:
+  - happy
+  - gentle
+  - pleased
+  - smile
+  fallback_cues:
+  - 开心
+  - 愉快
+  - 好消息
+  enabled: true
+  affect:
+    primary: happy
+    secondary:
+    - gentle
+    - pleased
+  intensity: mild
+  dialogue_act:
+  - response
+  - reminder
+  - reassurance
+  - suggestion
+  expression_style:
+  - smile
+  usage_scenarios:
+  - 愉快地邀请或催促同行
+  - 温和提醒饮食作息
+  - 笑着安慰对方
+  avoid_when:
+  - 明显为难的眉形或哭泣
+  - 必须慌张反驳的场景
+  - 仅因开心一词出现就硬选此图
+  contrast_with:
+    kei_laughing: 09号张口，08号闭口；都可用于带笑说话，不等于安静与大笑的绝对分界。
+    kei_content_smile: 19号嘴线更宽、弧度不同，且用户确认情绪强度略强；08 mild、19 medium，不等于关系更亲密。
+- id: kei_laughing
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_09.png
+  label: 闭眼笑着说话
+  description: 闭眼、脸红并张口，眉形舒展；适合愉快或温柔地说话，也可用于笑出声，但张口本身不等于开怀大笑或特别兴奋。
+  emotion_tags:
+  - happy
+  - gentle
+  - pleased
+  - smile
+  - speaking
+  fallback_cues:
+  - 太有趣了
+  - 开怀地笑
+  - 特别高兴
+  enabled: true
+  affect:
+    primary: happy
+    secondary:
+    - gentle
+    - pleased
+  intensity: mild
+  dialogue_act:
+  - response
+  - reminder
+  - reassurance
+  - suggestion
+  expression_style:
+  - smile
+  - speaking
+  usage_scenarios:
+  - 笑着提醒对方休息
+  - 愉快交流或安抚
+  - 有上下文支持时轻笑出声
+  avoid_when:
+  - 仅因张口就要求大笑
+  - 眉形明确为难或含泪哭泣
+  - 激烈羞恼抗议
+  contrast_with:
+    kei_happy_smile: 08号闭口、09号张口；语义重叠，不按说话与不说话强分。
+    kei_troubled_speaking: 10号眉内侧相对抬起、带为难感；09号眉形较舒展，不能只按闭眼张口判为同一种笑。
+- id: kei_troubled_speaking
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_10.png
+  label: 为难地说话／带无奈的笑
+  description: 闭眼、脸红并张口，眉形带为难感；可用于无奈地解释、感叹或带苦笑意味的评论，不限定吞吞吐吐、难以启齿或心虚。
+  emotion_tags:
+  - troubled
+  - resigned
+  - speaking
+  - strained
+  fallback_cues:
+  - 吞吞吐吐
+  - 勉强解释
+  - 有点难以启齿
+  enabled: true
+  affect:
+    primary: troubled
+    secondary:
+    - resigned
+  intensity: mild
+  dialogue_act:
+  - explanation
+  - comment
+  - response
+  expression_style:
+  - speaking
+  - strained
+  usage_scenarios:
+  - 无奈地解释自己为何有不满
+  - 带为难神态的感叹或评论
+  - 上下文支持时苦笑着说话
+  avoid_when:
+  - 从容开怀的笑
+  - 明显含泪或哭泣
+  - 仅因为闭眼就判断为困倦
+  contrast_with:
+    kei_laughing: 09号眉形较舒展，10号眉内侧相对抬起；可有苦笑观感，但不强行推断内心难过。
+    kei_nervous_troubled: 06号睁眼闭口并带汗滴，10号闭眼张口带脸红；两者都可以说明困扰。
+- id: kei_surprised_speaking
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_11.png
+  label: 开口陈述／补充判断
+  description: 正常瞳孔、眉形略紧并张口，无明显羞态；适合说明问题、询问、提出判断或主动承担事情。口型不是突发惊讶的证据。
+  emotion_tags:
+  - neutral
+  - thoughtful
+  - speaking
+  affect:
+    primary: neutral
+    secondary:
+    - thoughtful
+  intensity: mild
+  dialogue_act:
+  - explanation
+  - question
+  - proposal
+  - comment
+  expression_style:
+  - speaking
+  usage_scenarios:
+  - 连续说明或补充判断
+  - 询问安排
+  - 自然提出由自己承担某事
+  avoid_when:
+  - 突发受惊或明显脸红的反应
+  - 仅因旧ID含surprised就选作惊讶图
+  fallback_cues:
+  - 这样下去
+  - 只会越来越
+  - 永远没有
+  - 一开始不要
+  - 问题在于
+  enabled: true
+  contrast_with:
+    kei_puzzled: 02号张口较小，11号张口较明显、眉形更紧；用途可重叠，不强设意图界限。
+    kei_flustered_embarrassed: 12号有明显脸红；11号没有明显脸红。
+- id: kei_flustered_embarrassed
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_12.png
+  label: 脸红开口／害羞回应
+  description: 脸红、正常瞳孔，眉形略紧，张口而无明显汗滴；适合带羞意地回应、复述确认或说明，不限定为被点破后激烈否认。
+  emotion_tags:
+  - embarrassed
+  - flustered
+  - speaking
+  affect:
+    primary: embarrassed
+    secondary:
+    - flustered
+  intensity: medium
+  dialogue_act:
+  - response
+  - question
+  - clarification
+  - explanation
+  expression_style:
+  - flustered
+  - speaking
+  usage_scenarios:
+  - 听到亲近邀请后带羞意地确认内容
+  - 脸红但仍能自然回应或说明
+  - 轻度慌张中组织完整台词
+  avoid_when:
+  - 无羞态的普通陈述
+  - 明确大面积脸红或汗滴的更强演出
+  - 螺旋眼式混乱
+  contrast_with:
+    kei_flustered_nervous: 13号有单侧汗滴，眉形不同，更有局促感；两者都可用于害羞回应，不能把13号排除出害羞。
+    kei_very_flustered_surprised: 17号脸红线更密、张口形状不同；不把12号限定为解释、17号限定为惊讶。
+    kei_incredulous_embarrassed: 16号闭口嘴角下压；12号张口。是否反问或抱怨仍需上下文。
+  fallback_cues:
+  - 突然被靠近
+  - 害羞
+  - 被点破心事
+  fallback_priority: 4
+  enabled: true
+- id: kei_flustered_nervous
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_13.png
+  label: 脸红冒汗／局促回应
+  description: 脸红、单侧汗滴，眉形带局促感且张口；适合被追问心意后犹豫、澄清或害羞地回应。紧张可以伴随害羞，不应把被夸奖后的羞态列为禁用情境。
+  emotion_tags:
+  - embarrassed
+  - nervous
+  - hesitant
+  - flustered
+  - speaking
+  affect:
+    primary: embarrassed
+    secondary:
+    - nervous
+    - hesitant
+  intensity: medium
+  dialogue_act:
+  - clarification
+  - explanation
+  - hesitation
+  - response
+  expression_style:
+  - flustered
+  - hesitant
+  - speaking
+  usage_scenarios:
+  - 被追问是否讨厌某种亲近互动时难以措辞
+  - 害羞与局促并存的解释
+  - 脸红冒汗地回应意外问题
+  avoid_when:
+  - 没有羞态、只在处理客观风险的冷静担忧
+  - 从容自然的接受或微笑
+  - 已进入螺旋眼式混乱
+  fallback_cues:
+  - 紧张得不知所措
+  - 出了意外
+  - 手忙脚乱
+  fallback_priority: 3
+  enabled: true
+  contrast_with:
+    kei_flustered_embarrassed: 13号增加单侧汗滴且眉形更局促；不人为区分为‘不安而非害羞’。
+    kei_very_flustered_nervous: 18号脸红更密、双侧汗滴；13号单侧汗滴。用途可重叠，不要求不同触发事件。
+    kei_shy_explaining: 20号双侧汗滴、闭口；13号单侧汗滴、张口，均可用于局促解释，不按能否说话区分。
+- id: kei_moved_teary
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_14.png
+  label: 含泪微笑／感动回应
+  description: 闭眼、脸红并张口，眼角含泪且眉形较舒展；暂沿用感动含泪的用途，可配被理解后的回应或带泪笑意，不因一句谢谢就推断已经流泪。
+  emotion_tags:
+  - moved
+  - grateful
+  - happy
+  - teary
+  - smile
+  fallback_cues:
+  - 感动
+  - 非常感谢
+  - 被理解
+  fallback_priority: 4
+  enabled: true
+  affect:
+    primary: moved
+    secondary:
+    - grateful
+    - happy
+  intensity: medium
+  dialogue_act:
+  - gratitude
+  - response
+  - admission
+  expression_style:
+  - teary
+  - smile
+  usage_scenarios:
+  - 有明显感动与含泪演出的回应（推测）
+  - 带泪笑着表达感谢或心意（推测）
+  avoid_when:
+  - 普通礼貌道谢或平静微笑
+  - 明确表现悲痛、无奈哭诉但缺乏带泪笑意
+  - 泪水明显滴落时优先比较15号
+  contrast_with:
+    kei_crying: 14号眼角含泪、眉形较舒展；15号眉形较为难并出现下落水滴，暂建议15的哭泣演出更强。
+    kei_laughing: 09号同为闭眼张口带笑，但没有泪珠。
+- id: kei_crying
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_15.png
+  label: 流泪回应／感动落泪
+  description: 闭眼、脸红、眼角含泪并有下落水滴，眉形带较强情绪；暂以感动落泪为主要用途。也可能含复杂情绪，哭泣原因须由上下文支持，不仅凭泪水认定悲伤或喜悦。
+  emotion_tags:
+  - moved
+  - overwhelmed
+  - crying
+  fallback_cues:
+  - 感动得哭了
+  - 委屈
+  - 忍不住流泪
+  fallback_priority: 3
+  enabled: true
+  affect:
+    primary: moved
+    secondary:
+    - overwhelmed
+  intensity: extreme
+  dialogue_act:
+  - response
+  - gratitude
+  - admission
+  expression_style:
+  - crying
+  usage_scenarios:
+  - 明确感动到落泪的回应（推测）
+  - 被理解或重逢等情境中有泪水演出的表达（推测）
+  avoid_when:
+  - 普通感激但没有明显落泪演出
+  - 仅眼角含泪、较克制时比较14号
+  - 漫画式无奈哭诉优先比较30号
+  contrast_with:
+    kei_moved_teary: 15号增加下落水滴且眉形更为难，暂建议哭泣演出高一档；不设定不同触发事件。
+    kei_resigned_teary: 15号脸红且有水滴；30号无明显脸红、使用垂直泪线，偏漫画式哭诉观感。
+- id: kei_incredulous_embarrassed
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_16.png
+  label: 脸红别扭／轻微羞恼
+  description: 脸红、眉形略紧，闭口且嘴角下压，无明显汗滴；适合亲近互动后别扭地抱怨、嘴硬补充或保留态度，不要求受到难以置信的冲击。
+  emotion_tags:
+  - embarrassed
+  - annoyed
+  - reserved
+  - restrained
+  - displeased
+  affect:
+    primary: embarrassed
+    secondary:
+    - annoyed
+    - reserved
+  intensity: medium
+  dialogue_act:
+  - complaint
+  - comment
+  - response
+  expression_style:
+  - restrained
+  - displeased
+  usage_scenarios:
+  - 对夸张欢迎小声抱怨或补充一句
+  - 关心被调侃后嘴硬回应
+  - 脸红但没有激动喊叫的轻微羞恼
+  avoid_when:
+  - 开心地微笑接受
+  - 螺旋眼或强烈喊叫
+  - 只因台词出现难以置信便选择此图
+  fallback_cues:
+  - 难以置信
+  - 你刚才说什么
+  - 意外地害羞
+  fallback_priority: 5
+  enabled: true
+  contrast_with:
+    kei_flustered_embarrassed: 16号闭口、嘴角下压；12号张口。两者可以服务于相近台词，不以惊讶程度强行区分。
+    kei_embarrassed_avoiding_gaze: 21号明显侧视且双侧汗滴；16号较正向、无明显汗滴。
+    kei_shy_smile: 07号闭口带笑、眉形较舒展；16号嘴角下压。
+- id: kei_very_flustered_surprised
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_17.png
+  label: 明显脸红／激动回应
+  description: 脸红线较密、正常瞳孔，无明显汗滴，嘴呈较竖向张口；可用于被说可爱或被当小孩时的激动回应、羞恼抗议，也可配意外反应，不限定为惊讶或受惊。
+  emotion_tags:
+  - embarrassed
+  - flustered
+  - surprised
+  - speaking
+  affect:
+    primary: embarrassed
+    secondary:
+    - flustered
+    - surprised
+  intensity: high
+  dialogue_act:
+  - reaction
+  - protest
+  - denial
+  - response
+  expression_style:
+  - flustered
+  - speaking
+  usage_scenarios:
+  - 被说可爱时激动抗议
+  - 对幼儿化互动表达羞恼
+  - 明显脸红的意外回应
+  avoid_when:
+  - 平静无羞态的说明
+  - 只有轻微笑意
+  - 螺旋眼式混乱；不把所有惊讶都映射为脸红
+  fallback_cues:
+  - 突然袭击
+  - 完全没料到
+  - 强烈惊讶
+  - 突然睁大眼睛
+  - 突然这么说
+  fallback_priority: 9
+  enabled: true
+  contrast_with:
+    kei_very_flustered_nervous: 17号无明显汗滴、较竖向张口；18号双侧汗滴、不同张口形状。不据此硬分成惊讶／压力。
+    kei_flustered_embarrassed: 17号脸红更密、嘴型不同；12号的演出较轻。具体强度分档待校对。
+    kei_flustered_protesting: 25号为空白半垂眼、明显压眉大张口；17号保留正常瞳孔，两者都可抗议。
+- id: kei_very_flustered_nervous
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_18.png
+  label: 明显脸红冒汗／慌张回应
+  description: 脸红线较密、双侧汗滴、正常瞳孔且张口；适合亲近互动中的慌张抗议、被调侃后的回应，或面对老师异常反应时局促地解释，不限定为压力事件或即将出错。
+  emotion_tags:
+  - embarrassed
+  - nervous
+  - flustered
+  - speaking
+  fallback_cues:
+  - 压力很大
+  - 快要出错
+  - 非常紧张
+  fallback_priority: 7
+  enabled: true
+  affect:
+    primary: embarrassed
+    secondary:
+    - nervous
+    - flustered
+  intensity: high
+  dialogue_act:
+  - reaction
+  - protest
+  - clarification
+  - explanation
+  - response
+  expression_style:
+  - flustered
+  - speaking
+  usage_scenarios:
+  - 面对夸张欢迎或调侃时脸红冒汗
+  - 关心被对方拿来逗弄后的回应
+  - 面对对方突然靠近或异常反应时局促地解释
+  avoid_when:
+  - 只是客观风险话题、没有外显慌张或羞态
+  - 从容微笑或普通陈述
+  - 螺旋眼式混乱；不把冒汗直接解释成危险或失控
+  contrast_with:
+    kei_very_flustered_surprised: 18号双侧汗滴、张口下缘较圆弧；17号无明显汗滴、较竖向张口。情绪和意图可以重叠。
+    kei_flustered_nervous: 13号单侧汗滴，18号双侧汗滴且脸红更密；不要求不同触发事件。
+    kei_shy_explaining: 20号同样明显脸红、双侧汗滴，但闭口；两者都可解释，嘴型不决定能否说话。
+- id: kei_content_smile
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_19.png
+  label: 闭眼微笑／较浓的笑意
+  description: 闭眼、脸红并闭口微笑，嘴线较08号宽且弧度不同；用户校准为笑意和外显愉快程度略强于08号，用途仍相近，不推断更高亲密程度。
+  emotion_tags:
+  - happy
+  - gentle
+  - pleased
+  - smile
+  fallback_cues:
+  - 安心
+  - 满足
+  - 温柔地回应
+  enabled: true
+  affect:
+    primary: happy
+    secondary:
+    - gentle
+    - pleased
+  intensity: medium
+  dialogue_act:
+  - response
+  - reminder
+  - reassurance
+  - suggestion
+  expression_style:
+  - smile
+  usage_scenarios:
+  - 愉快地邀请或催促同行
+  - 温和提醒饮食作息
+  - 笑着安慰对方
+  avoid_when:
+  - 明显为难的眉形或哭泣
+  - 必须慌张反驳的场景
+  - 仅因满足或安心一词就强行区分08和19
+  contrast_with:
+    kei_happy_smile: 19号笑意略强于08号，19为medium、08为mild；同时保留嘴线宽度和弧度区别，意图与适用场景相近。
+    kei_laughing: 09号张口，19号闭口，不据此规定能否说话。
+- id: kei_shy_explaining
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_20.png
+  label: 局促地解释／欲言又止
+  description: 脸红、双侧汗滴，视线较正向且闭口；适合害羞中努力组织措辞、说明心意或尚未说出口的停顿，不限定音量。
+  emotion_tags:
+  - embarrassed
+  - nervous
+  - hesitant
+  - flustered
+  fallback_cues:
+  - 小声解释
+  - 掩饰害羞
+  - 心虚地说
+  - 不是那样的
+  fallback_priority: 4
+  enabled: true
+  affect:
+    primary: embarrassed
+    secondary:
+    - nervous
+    - hesitant
+  intensity: high
+  dialogue_act:
+  - explanation
+  - clarification
+  - hesitation
+  expression_style:
+  - flustered
+  - hesitant
+  - explaining
+  usage_scenarios:
+  - 被调侃后试图说明自己的真实意思
+  - 想提出请求但尚未说出口
+  - 害羞地收束解释或确认对方是否理解
+  avoid_when:
+  - 明确把视线移到一旁，21号更贴切
+  - 螺旋眼式混乱演出
+  - 平静且无羞意的普通说明
+  contrast_with:
+    kei_embarrassed_avoiding_gaze: 20号视线较正向，21号明显侧视；两者均脸红冒汗，不宜只凭强度区分。
+    kei_avoiding_gaze: 22号侧视但没有明显脸红、汗滴，外显情绪更弱。
+- id: kei_embarrassed_avoiding_gaze
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_21.png
+  label: 脸红侧视／别扭地坦露心意
+  description: 脸红并冒双侧汗滴，目光偏向一旁、嘴巴闭合；适合难为情地承认心意、提出期待或在被看穿后回避视线，不必解释为做错事的心虚。
+  emotion_tags:
+  - embarrassed
+  - shy
+  - hesitant
+  - avoiding_gaze
+  - flustered
+  fallback_cues:
+  - 心虚地躲闪
+  - 低声辩解
+  - 不敢直视
+  - 被看穿
+  fallback_priority: 4
+  enabled: true
+  affect:
+    primary: embarrassed
+    secondary:
+    - shy
+    - hesitant
+  intensity: medium
+  dialogue_act:
+  - admission
+  - request
+  - hesitation
+  - response
+  expression_style:
+  - avoiding_gaze
+  - flustered
+  usage_scenarios:
+  - 嘴上有所保留地承认高兴或好感
+  - 害羞地表达期待或请求
+  - 被看穿后侧视停顿或简短回应
+  avoid_when:
+  - 明确直视对方组织解释，优先比较20号
+  - 没有明显脸红的安静侧视，优先比较22号
+  - 需要螺旋眼或强烈喊叫的演出
+  contrast_with:
+    kei_shy_explaining: 21号的直接区别是侧视；承认与解释可重叠，不能把意图当作绝对分界。
+    kei_avoiding_gaze: 21号明显脸红冒汗，22号保留侧视而去掉这些符号。
+- id: kei_avoiding_gaze
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_22.png
+  label: 安静侧视／有所保留
+  description: 闭口侧视，没有明显脸红或汗滴；适合未说出口的盘算、轻微难为情或有所保留的停顿，不能仅凭侧视推断强烈害羞或拒绝。
+  emotion_tags:
+  - neutral
+  - hesitant
+  - reserved
+  - avoiding_gaze
+  - restrained
+  fallback_cues:
+  - 回避目光
+  - 不太好意思
+  - 避开话题
+  enabled: true
+  affect:
+    primary: neutral
+    secondary:
+    - hesitant
+    - reserved
+  intensity: mild
+  dialogue_act:
+  - hesitation
+  - pause
+  expression_style:
+  - avoiding_gaze
+  - restrained
+  usage_scenarios:
+  - 作出主动提议前的安静停顿
+  - 接受邀请后保留情绪的侧视
+  - 轻微难为情但没有明显外显羞态
+  avoid_when:
+  - 明确脸红冒汗的躲闪
+  - 直视微笑表示欣然接受
+  - 激烈抗议或混乱
+  contrast_with:
+    kei_embarrassed_avoiding_gaze: 22号无明显脸红、汗滴；21号的羞态外显得多。
+    kei_shy_explaining: 20号视线较正向且脸红冒汗；22号安静侧视。
+- id: kei_gloomy
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_23.png
+  label: 阴沉凝视／压抑不悦
+  description: 上半脸阴影、鲜亮环形瞳孔并闭口凝视；暂用于明确阴沉不悦或带压迫感的警告。仅压低声音、普通严肃或台词提到生气不足以支持此图。
+  emotion_tags:
+  - angry
+  - gloomy
+  - displeased
+  - shadowed_face
+  - staring
+  fallback_cues:
+  - 明显不高兴
+  - 严肃警告
+  - 压低声音
+  fallback_priority: 5
+  enabled: true
+  affect:
+    primary: angry
+    secondary:
+    - gloomy
+    - displeased
+  intensity: high
+  dialogue_act:
+  - warning
+  - response
+  - protest
+  expression_style:
+  - shadowed_face
+  - staring
+  usage_scenarios:
+  - 明确阴沉凝视或脸色沉下来的不悦演出（推测）
+  - 持续不悦中的低调警告（推测）
+  avoid_when:
+  - 温柔低声说话或带笑提醒
+  - 只有严肃话题或否定生气的台词
+  - 脸红羞恼但没有阴影凝视演出
+  contrast_with:
+    kei_angry_stern: 23号突出上半脸阴影与异常瞳孔；33号突出压眉怒视，不用嗓音高低代替图像差异。
+    kei_serious: 05号无阴影或异常瞳孔，平静认真不应直接升级成23号。
+- id: kei_embarrassed_speechless
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_24.png
+  label: 羞恼愕然／无语地反问
+  description: 脸红、半垂空白眼型并张口，表现被逗到一时无语或羞恼愕然；可以接完整反问，不要求沉默或失语。
+  emotion_tags:
+  - embarrassed
+  - exasperated
+  - incredulous
+  - blank_eyes
+  fallback_cues:
+  - 无话可说
+  - 说不出话
+  - 被问住了
+  fallback_priority: 4
+  enabled: true
+  affect:
+    primary: embarrassed
+    secondary:
+    - exasperated
+    - incredulous
+  intensity: high
+  dialogue_act:
+  - question
+  - reaction
+  - protest
+  expression_style:
+  - blank_eyes
+  - exasperated
+  - speechless
+  usage_scenarios:
+  - 察觉被取笑后愕然追问
+  - 被逗得无语但仍能反问
+  - 强烈难为情中的短暂卡顿
+  avoid_when:
+  - 平静地回忆问题或普通提问
+  - 螺旋眼式混乱
+  - 明显压眉、大幅张口的强烈抗议，优先25号
+  contrast_with:
+    kei_flustered_protesting: 24号眉眼较松、张口较小，偏愕然反问；25号压眉和张口更强，偏主动抗议。
+    kei_extremely_shy_dazed: 24号为空白半垂眼，26号为螺旋瞳孔；‘无语’和‘混乱’不宜直接混用。
+- id: kei_flustered_protesting
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_25.png
+  label: 羞恼地强烈抗议
+  description: 脸红、空白半垂眼，眉头压低且大幅张口；适合被调侃或幼儿化对待后强烈反驳、强调立场的羞恼演出。是否真有敌意需要上下文判断。
+  emotion_tags:
+  - embarrassed
+  - flustered
+  - annoyed
+  - protesting
+  - emphatic
+  - blank_eyes
+  fallback_cues:
+  - 急忙否认
+  - 害羞地抗议
+  - 别这样说
+  fallback_priority: 6
+  enabled: true
+  affect:
+    primary: embarrassed
+    secondary:
+    - flustered
+    - annoyed
+  intensity: high
+  dialogue_act:
+  - protest
+  - denial
+  - insistence
+  expression_style:
+  - protesting
+  - emphatic
+  - blank_eyes
+  usage_scenarios:
+  - 被取笑后强烈反驳或强调自己看到了
+  - 被当成小孩时羞恼抗议
+  - 仍有清晰表达意图的激动否认
+  avoid_when:
+  - 温和接受夸奖
+  - 主要是无语追问而非强烈反驳，优先24号
+  - 缺乏羞态、持续严肃的真实愤怒
+  contrast_with:
+    kei_embarrassed_speechless: 25号压眉和嘴部张幅更强，主动抗议意味更突出。
+    kei_extremely_shy_panicked: 25号强调清晰的抗议立场；27号螺旋眼更突出慌乱。混合场景可同时合理。
+- id: kei_extremely_shy_dazed
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_26.png
+  label: 混乱惊慌／被直球打乱节奏
+  description: 螺旋眼、脸红、单侧汗滴并张口；适合突发亲近或被看穿后节奏被打乱的惊慌、抗议与混乱解释，并不表示失去说话能力。
+  emotion_tags:
+  - embarrassed
+  - overwhelmed
+  - startled
+  - spiral_eyes
+  - flustered
+  fallback_cues:
+  - 害羞到发懵
+  - 脑中一片空白
+  - 羞得说不出话
+  fallback_priority: 5
+  enabled: true
+  affect:
+    primary: embarrassed
+    secondary:
+    - overwhelmed
+    - startled
+  intensity: extreme
+  dialogue_act:
+  - reaction
+  - protest
+  - explanation
+  expression_style:
+  - spiral_eyes
+  - flustered
+  - speechless
+  usage_scenarios:
+  - 突发亲近使回应节奏被打乱
+  - 被直球击中后激动抗议
+  - 找借口时短暂混乱但继续说话
+  avoid_when:
+  - 普通害羞、轻微脸红
+  - 理性平静的说明
+  - 仅因没答出知识题就推断羞到混乱
+  contrast_with:
+    kei_extremely_shy_panicked: 26号单侧汗滴、较竖向张口；27号双侧汗滴且嘴型横向。两者意图有重叠，‘初次冲击／持续慌乱’只作软偏好。
+    kei_extremely_shy_overwhelmed: 28号双侧汗滴，张口下缘较圆弧；26号单侧汗滴、较竖向张口。不将28号解释为强撑笑意。
+- id: kei_extremely_shy_panicked
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_27.png
+  label: 害羞混乱／横向张口
+  description: 螺旋眼、明显脸红和双侧汗滴，嘴巴横向张开；适合害羞混乱中的解释、停顿、强调或短促反应。27、28号共用情绪和意图含义，仅区分张口形状。
+  emotion_tags:
+  - embarrassed
+  - overwhelmed
+  - flustered
+  - spiral_eyes
+  fallback_cues:
+  - 害羞到慌了
+  - 越解释越慌
+  - 不要再说了
+  fallback_priority: 7
+  enabled: true
+  affect:
+    primary: embarrassed
+    secondary:
+    - overwhelmed
+    - flustered
+  intensity: extreme
+  dialogue_act:
+  - explanation
+  - hesitation
+  - insistence
+  - reaction
+  expression_style:
+  - spiral_eyes
+  - flustered
+  - explaining
+  usage_scenarios:
+  - 害羞混乱中搜寻措辞或解释
+  - 混乱地强调理由并试图收束
+  - 混乱状态中的停顿或短促反应
+  avoid_when:
+  - 清晰从容且没有羞态的普通说明
+  - 只有轻微脸红或安静侧视
+  - 不能单凭台词内容区分27号和28号
+  contrast_with:
+    kei_extremely_shy_overwhelmed: 27号横向张口，28号张口下缘较圆弧。情绪、强度与对话意图相同；没有明确嘴型要求时均可接受。
+    kei_extremely_shy_dazed: 27、28号均为双侧汗滴，26号为单侧汗滴且张口较竖向；不依据这些差异强设意图或强度等级。
+- id: kei_extremely_shy_overwhelmed
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_28.png
+  label: 害羞混乱／圆弧张口
+  description: 螺旋眼、明显脸红和双侧汗滴，嘴巴张开，下缘较圆弧；适合害羞混乱中的解释、停顿、强调或短促反应。27、28号共用情绪和意图含义，仅区分张口形状。
+  emotion_tags:
+  - embarrassed
+  - overwhelmed
+  - flustered
+  - spiral_eyes
+  fallback_cues:
+  - 害羞得发晕
+  - 尴尬到不知所措
+  - 羞得一团乱
+  fallback_priority: 8
+  enabled: true
+  affect:
+    primary: embarrassed
+    secondary:
+    - overwhelmed
+    - flustered
+  intensity: extreme
+  dialogue_act:
+  - explanation
+  - hesitation
+  - insistence
+  - reaction
+  expression_style:
+  - spiral_eyes
+  - flustered
+  - overwhelmed
+  usage_scenarios:
+  - 害羞混乱中搜寻措辞或解释
+  - 混乱地强调理由并试图收束
+  - 混乱状态中的停顿或短促反应
+  avoid_when:
+  - 清晰从容且没有羞态的普通说明
+  - 只有轻微脸红或安静侧视
+  - 不能单凭台词内容区分27号和28号
+  contrast_with:
+    kei_extremely_shy_panicked: 27号横向张口，28号张口下缘较圆弧。情绪、强度与对话意图相同；没有明确嘴型要求时均可接受。
+    kei_extremely_shy_dazed: 27、28号均为双侧汗滴，26号为单侧汗滴且张口较竖向；不依据这些差异强设意图或强度等级。
+- id: kei_troubled_sigh
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_29.png
+  label: 闭眼无奈／叹气式抱怨
+  description: 闭眼张口、眉形为难，无明显脸红和泪水；适合无奈评论、抱怨或叹气式回应，不必真的疲劳，也不要求文字一定写出叹气。
+  emotion_tags:
+  - resigned
+  - speaking
+  - troubled
+  fallback_cues:
+  - 无奈地叹气
+  - 事情真棘手
+  - 还是得继续
+  enabled: true
+  affect:
+    primary: resigned
+    secondary:
+    - troubled
+  intensity: medium
+  dialogue_act:
+  - complaint
+  - comment
+  - response
+  expression_style:
+  - resigned
+  - speaking
+  usage_scenarios:
+  - 对接连发生的麻烦无奈评论
+  - 对被当小孩的评价无奈回应
+  - 有上下文支持时叹气抱怨
+  avoid_when:
+  - 只有困倦或身体疲劳词汇、没有为难演出
+  - 含泪哭诉或尖锐怒视
+  - 开心闭眼笑
+  contrast_with:
+    kei_resigned_teary: 30号在相近眉眼和嘴型上增加漫画式垂直泪线，困扰演出暂定更强。
+    kei_troubled_speaking: 10号脸红、闭眼张口带苦笑观感；29号无明显脸红，嘴型与闭眼形状不同，不必硬分原因。
+- id: kei_resigned_teary
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_30.png
+  label: 无奈哭诉／漫画式流泪
+  description: 闭眼张口、眉形为难并带漫画式垂直泪线；暂用于困扰升级后的无奈哭诉、求饶式抱怨，不自动表示真实绝望或严重悲痛。
+  emotion_tags:
+  - troubled
+  - distressed
+  - resigned
+  - crying
+  fallback_cues:
+  - 很无奈
+  - 没有办法了
+  - 放过我吧
+  fallback_priority: 3
+  enabled: true
+  affect:
+    primary: troubled
+    secondary:
+    - distressed
+    - resigned
+  intensity: high
+  dialogue_act:
+  - complaint
+  - plea
+  - response
+  expression_style:
+  - crying
+  - resigned
+  usage_scenarios:
+  - 麻烦不断、无奈到漫画式流泪（推测）
+  - 夸张地请求放过自己或抱怨负担（推测）
+  avoid_when:
+  - 普通无奈但没有流泪演出
+  - 明确感动的带泪笑意
+  - 仅凭没办法或放过我等字面词就选图
+  contrast_with:
+    kei_troubled_sigh: 30号增加垂直泪线，暂设high，29号无泪为medium；可以用于相近的困扰情境。
+    kei_crying: 15号有脸红和下落泪滴；30号是漫画式泪线，不凭crying标签混为同一种情绪。
+    kei_resigned_crying_out: 31号挤紧眼型并有单侧两道曲线符号，30号为较平的闭眼和垂直泪线；不硬设同一事件的先后阶段。
+- id: kei_resigned_crying_out
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_31.png
+  label: 困扰喊叫／夸张招架不住
+  description: 挤紧眼睛、张口，眉形为难且带单侧曲线符号；暂用于被麻烦弄得招架不住的夸张喊叫或抱怨，不因图名就认定痛苦、哭泣或绝望。
+  emotion_tags:
+  - troubled
+  - overwhelmed
+  - distressed
+  - strained
+  - emphatic
+  fallback_cues:
+  - 崩溃地喊
+  - 绝望
+  - 强烈痛苦
+  fallback_priority: 8
+  enabled: true
+  affect:
+    primary: troubled
+    secondary:
+    - overwhelmed
+    - distressed
+  intensity: extreme
+  dialogue_act:
+  - complaint
+  - protest
+  - plea
+  - reaction
+  expression_style:
+  - strained
+  - emphatic
+  usage_scenarios:
+  - 对突来的麻烦夸张喊叫（推测）
+  - 强烈困扰中请求停止或抗议（推测）
+  avoid_when:
+  - 平静无奈或普通叹气
+  - 感动含泪或温和微笑
+  - 只谈到痛苦或绝望，没有相应演出
+  contrast_with:
+    kei_resigned_teary: 31号挤紧眼型、单侧曲线符号；30号垂直泪线。两者都可表达强烈困扰，不要求31必然正在哭。
+    kei_troubled_sigh: 29号闭眼较平和、无附加符号；31号挤眼演出更夸张。
+- id: kei_flustered_huff
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_32.png
+  label: 气呼呼抗议／不满反驳
+  description: 正常瞳孔、明显压眉并大幅张口，图上无明显脸红；适合气恼地抱怨、责备或反驳。它不表达可见羞态，也不要求真的发出哈气声。
+  emotion_tags:
+  - angry
+  - annoyed
+  - protesting
+  - emphatic
+  fallback_cues:
+  - 害羞到破防
+  - 气呼呼地抗议
+  - 别再说了
+  - 哈气
+  fallback_priority: 8
+  enabled: true
+  affect:
+    primary: angry
+    secondary:
+    - annoyed
+  intensity: high
+  dialogue_act:
+  - protest
+  - complaint
+  - reproach
+  expression_style:
+  - protesting
+  - emphatic
+  usage_scenarios:
+  - 气恼地抱怨、责备或反驳
+  - 对荒唐说法表示明显不满
+  avoid_when:
+  - 明显脸红、失语或手足无措的羞态
+  - 安静陈述或微笑
+  - 阴沉凝视或闭口严厉警告
+  contrast_with:
+    kei_flustered_protesting: 25号脸红、空白半垂眼，适合羞恼破防；32号无明显脸红、正常瞳孔，适合气恼反驳。
+    kei_angry_stern: 32号大幅张口，33号闭口；眼眉接近。语境可以不同，但嘴型本身不证明羞恼与真实愤怒。
+- id: kei_angry_stern
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_33.png
+  label: 压眉不悦／严厉回应
+  description: 正常瞳孔、明显压眉且闭口，表现严厉不悦；适合明确责备或强硬回应，不将普通提醒自动等同于生气，也不因闭口就禁止配台词。
+  emotion_tags:
+  - angry
+  - stern
+  - displeased
+  - staring
+  fallback_cues:
+  - 严厉地提醒
+  - 明确责备
+  - 绝不能接受
+  - 无法接受这种做法
+  fallback_priority: 6
+  enabled: true
+  affect:
+    primary: angry
+    secondary:
+    - stern
+    - displeased
+  intensity: high
+  dialogue_act:
+  - reproach
+  - warning
+  - protest
+  - response
+  expression_style:
+  - stern
+  - staring
+  usage_scenarios:
+  - 有明确怒意或严厉演出的责备（推测）
+  - 强硬表达不接受某种行为（推测）
+  avoid_when:
+  - 普通关心或温和提醒
+  - 只是知识纠错而没有不悦演出
+  - 明显带笑或脸红回避
+  contrast_with:
+    kei_flustered_huff: 与32号眼眉相近、主要区别为嘴部闭合。严厉不悦与被逗抗议的意图区别依赖上下文，不由闭口决定。
+    kei_gloomy: 23号上半脸阴影、异常瞳孔；33号压眉但没有这些特效。
+    kei_serious: 05号眉形和表情更收敛，普通认真不直接等同严厉怒视。
+- id: kei_closed_eyes
+  file: assets/stickers/tendou_kei/CH0335_noweapon_spr_99.png
+  label: 平静陈述/闭眼
+  description: 闭眼闭口、神态平静，无明显脸红或汗滴；可配自然说明、询问或克制评论。也可用于描述闭眼这个动作本身
+  emotion_tags:
+  - neutral
+  - composed
+  - restrained
+  fallback_cues: []
+  enabled: true
+  affect:
+    primary: neutral
+    secondary:
+    - composed
+  intensity: mild
+  dialogue_act:
+  - statement
+  - question
+  - comment
+  expression_style:
+  - restrained
+  usage_scenarios:
+  - 平静说明事实或提供判断
+  - 不改变平静神态的轻微抱怨或反问
+  avoid_when:
+  - 明显笑意、脸红、冒汗或激烈情绪
+  - 仅因为没有别的贴图合适而强制发送此图
+  contrast_with:
+    kei_neutral: 01号睁眼闭口。

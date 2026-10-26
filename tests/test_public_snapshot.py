@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 from pathlib import Path
 
 import pytest
@@ -17,6 +18,16 @@ from roles.registry import get_role, list_roles
 from roles.stickers.registry import StickerRegistry
 from roles.stickers.schema import StickerAffect, StickerDefinition
 from tools.export_public_kei import export, public_files
+
+
+def test_source_audit_matches_public_files() -> None:
+    root = Path(__file__).resolve().parents[1]
+    audit = json.loads((root / "docs/SOURCE_AUDIT.json").read_text(encoding="utf-8"))
+    assert audit["frozen_kei_v1_1"]["status"] == "source unverified"
+    assert audit["current_worktree"]["evidence_rows"] == 78
+    for entry in audit["public_derivative"]["source_entries"]:
+        path = root / entry.get("public_path", entry["path"])
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == entry["public_sha256"]
 
 
 def test_default_kei_profile_is_discoverable() -> None:
@@ -72,8 +83,8 @@ def test_synthetic_scene_contract_and_retrieval(tmp_path: Path, monkeypatch: pyt
     assert index.index_path(role_id).is_file()
 
 
-def test_missing_sticker_and_family_boundary() -> None:
-    assert StickerRegistry.from_directory().list_available("tendou_kei") == []
+def test_reviewed_stickers_and_family_boundary() -> None:
+    assert len(StickerRegistry.from_directory().list_available("tendou_kei")) == 34
     called = False
 
     def model_call(*args, **kwargs):
@@ -94,7 +105,7 @@ def test_missing_sticker_and_family_boundary() -> None:
     assert _family_candidates([angry], "gentle") == ((), True)
 
 
-def test_api_import_without_assets() -> None:
+def test_api_import_with_reviewed_assets() -> None:
     from fastapi.testclient import TestClient
     from web.server import create_app
 
@@ -103,19 +114,24 @@ def test_api_import_without_assets() -> None:
         assert "no frontend" in client.get("/").json()["detail"]
         assert client.get("/api/roles").status_code == 200
         assert client.get("/api/modes").status_code == 200
+        assert client.get("/local-assets/avatars/tendou_kei.png").status_code == 200
+        assert client.get("/local-assets/stickers/tendou_kei/CH0335_noweapon_spr_01.png").status_code == 200
 
 
 def test_allowlist_export_excludes_private_trees(tmp_path: Path) -> None:
     target = tmp_path / "public"
     files = public_files()
     assert Path("roles/profiles/tendou_kei.yaml") in files
+    assert Path("roles/stickers/packs/tendou_kei.yaml") in files
+    assert Path("docs/SOURCE_AUDIT.json") in files
     assert all("sample_character" not in str(path) for path in files)
     manifest = export(target)
     assert manifest["snapshot_id"] == "kei-v1.1-public"
     assert (target / "PUBLIC_MANIFEST.json").is_file()
     assert (target / "checksums.sha256").is_file()
     assert not (target / ".git").exists()
-    assert not list(target.rglob("*.png"))
+    assert len(list(target.rglob("*.png"))) == 35
+    assert len(list((target / "local_data/roleplay_cards/tendou_kei").glob("*.md"))) == 7
     assert not list(target.rglob(".env"))
     with pytest.raises(FileExistsError):
         export(target)

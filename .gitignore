@@ -13,3 +13,22 @@ momotalk-main/
 Base-56/
 Background/
 local_data/*
+
+# Reviewed public Kei assets and original-story Scene Markdown only.
+!assets/
+assets/*
+!assets/avatars/
+assets/avatars/*
+!assets/avatars/tendou_kei.png
+!assets/stickers/
+assets/stickers/*
+!assets/stickers/tendou_kei/
+assets/stickers/tendou_kei/*
+!assets/stickers/tendou_kei/*.png
+!local_data/roleplay_cards/
+local_data/roleplay_cards/*
+!local_data/roleplay_cards/tendou_kei/
+local_data/roleplay_cards/tendou_kei/*
+!local_data/roleplay_cards/tendou_kei/tendou_kei_kizuna*.md
+!local_data/roleplay_cards/tendou_kei/tendou_kei_memoryhall.md
+!local_data/roleplay_cards/tendou_kei/tendou_kei_valentine_perfect_plan_sliced_v2.md

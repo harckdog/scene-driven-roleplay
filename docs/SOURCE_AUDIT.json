@@ -1,0 +1,893 @@
+{
+  "audit_date": "2026-10-26",
+  "frozen_kei_v1_1": {
+    "status": "source unverified",
+    "local_tag_found": false,
+    "frozen_package_found": false,
+    "historical_32_rows": "unverified claim; not inferred from current 78 rows"
+  },
+  "current_worktree": {
+    "head": "86c57fdc2cd7fd30f8e0063841664b6457c745da",
+    "evidence_rows": 78
+  },
+  "public_derivative": {
+    "parent_commit": "6a689c34472893380711ccd42a5d08689d45ecc9",
+    "source_entries": [
+      {
+        "path": "ROLEPLAY_DEVELOPMENT_MANUAL.md",
+        "public_path": "docs/ROLEPLAY_DEVELOPMENT_MANUAL.md",
+        "source_sha256": "794ea0290afd3dcb65deed57c949e53b521e21e1cd0dc080c628b143d2198025",
+        "public_sha256": "04ebf6afc08f000180235b40ddccdbaf664cc5964af1924eb4ff8c2deca18669",
+        "category": "reviewed_manual_source"
+      },
+      {
+        "path": "app.py",
+        "source_sha256": "b5cf6f8e09761a478e1a03d6c4d193b502a675b5328fbf837ddf14065c5e2656",
+        "public_sha256": "cdc58e3bf4bcdfeef3411e6ce1a210c28db0511cbd2bd89dc4d62b25089d8703",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "assets/avatars/tendou_kei.png",
+        "source_sha256": "2243360a57db8a1ac589a04c647b73bfe405c3dcc1263af5ea5d3a8335f73eb6",
+        "public_sha256": "2243360a57db8a1ac589a04c647b73bfe405c3dcc1263af5ea5d3a8335f73eb6",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_01.png",
+        "source_sha256": "dbac9cd3662f8271d5dd70a1bae0a388e9528aad60530b66516eaaf353c30777",
+        "public_sha256": "dbac9cd3662f8271d5dd70a1bae0a388e9528aad60530b66516eaaf353c30777",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_02.png",
+        "source_sha256": "5d19f14102697e4f1bb79557cd27fc3244cb8b2c8a596166df7bb7ce75facd96",
+        "public_sha256": "5d19f14102697e4f1bb79557cd27fc3244cb8b2c8a596166df7bb7ce75facd96",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_03.png",
+        "source_sha256": "76eb716233f88373b7c6e6693042c8941361b043ea60e34c6713dd161a153e2f",
+        "public_sha256": "76eb716233f88373b7c6e6693042c8941361b043ea60e34c6713dd161a153e2f",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_04.png",
+        "source_sha256": "df97d9ffc876e0315a3d76690d7493210879179865c5b2169d63e71267d003ac",
+        "public_sha256": "df97d9ffc876e0315a3d76690d7493210879179865c5b2169d63e71267d003ac",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_05.png",
+        "source_sha256": "86106f1cdcb80ad8c41a461e0d8ef7868a1287888f34ab15d27facaa478875f4",
+        "public_sha256": "86106f1cdcb80ad8c41a461e0d8ef7868a1287888f34ab15d27facaa478875f4",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_06.png",
+        "source_sha256": "4d04b2129b5bf15f7dd97986e951fd9940a274621d65301d7557df6d6a44cff0",
+        "public_sha256": "4d04b2129b5bf15f7dd97986e951fd9940a274621d65301d7557df6d6a44cff0",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_07.png",
+        "source_sha256": "06acad98fc13491c5cc6ceaa5e34df1023604e696c25fcde5780b1ebbaa1bfa7",
+        "public_sha256": "06acad98fc13491c5cc6ceaa5e34df1023604e696c25fcde5780b1ebbaa1bfa7",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_08.png",
+        "source_sha256": "9d6e48dc02cf4b2fccf49c96a9e0b7d4ba8458d23d90550f250da9d4e3eeebc6",
+        "public_sha256": "9d6e48dc02cf4b2fccf49c96a9e0b7d4ba8458d23d90550f250da9d4e3eeebc6",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_09.png",
+        "source_sha256": "e6a9a1ea25f437fecde1f5770389c1288d635830a11328de730eee6e1f9aea27",
+        "public_sha256": "e6a9a1ea25f437fecde1f5770389c1288d635830a11328de730eee6e1f9aea27",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_10.png",
+        "source_sha256": "b126662a9b6c8e0d48a92792c1a4568b17fc45624087c5b30c461857a6cbd60c",
+        "public_sha256": "b126662a9b6c8e0d48a92792c1a4568b17fc45624087c5b30c461857a6cbd60c",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_11.png",
+        "source_sha256": "577a02a3a084fc72b606735cd794f4425a7a63937f7193dde4186fdcef7ae72a",
+        "public_sha256": "577a02a3a084fc72b606735cd794f4425a7a63937f7193dde4186fdcef7ae72a",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_12.png",
+        "source_sha256": "47d478f2993702d6ce3e088e2d9de6da1fe08e5ccac07058fd9e0952dab72cb3",
+        "public_sha256": "47d478f2993702d6ce3e088e2d9de6da1fe08e5ccac07058fd9e0952dab72cb3",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_13.png",
+        "source_sha256": "38340561e64b41d907dad2bfda657fe235b43ed252d12bf5e8c717abc5a7864f",
+        "public_sha256": "38340561e64b41d907dad2bfda657fe235b43ed252d12bf5e8c717abc5a7864f",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_14.png",
+        "source_sha256": "38b26991f8e605b8c8b51c50eb48e92cd63ff59027d3081bc17a5491c9eb801e",
+        "public_sha256": "38b26991f8e605b8c8b51c50eb48e92cd63ff59027d3081bc17a5491c9eb801e",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_15.png",
+        "source_sha256": "d67ddf617f255a5454fc015a65b4d452a31d6bc25f713ef13fe0e77f1fa8b2fd",
+        "public_sha256": "d67ddf617f255a5454fc015a65b4d452a31d6bc25f713ef13fe0e77f1fa8b2fd",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_16.png",
+        "source_sha256": "fa9fd97eca7021e170e4993bfd7b170c0cbf41612b13064b0571b0e0a3c3b038",
+        "public_sha256": "fa9fd97eca7021e170e4993bfd7b170c0cbf41612b13064b0571b0e0a3c3b038",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_17.png",
+        "source_sha256": "84d415bb955607060feff8353ccdbeb9dbd64fb644c35058fbcd974123721464",
+        "public_sha256": "84d415bb955607060feff8353ccdbeb9dbd64fb644c35058fbcd974123721464",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_18.png",
+        "source_sha256": "dab52983b915eaeee68dceb39232d847a0dd5e96d72400a9c788f0b0b3844a82",
+        "public_sha256": "dab52983b915eaeee68dceb39232d847a0dd5e96d72400a9c788f0b0b3844a82",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_19.png",
+        "source_sha256": "46896b37f722ba896d5631dc280f440f61afd18ff08fb752b7560b2ded5f9b5a",
+        "public_sha256": "46896b37f722ba896d5631dc280f440f61afd18ff08fb752b7560b2ded5f9b5a",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_20.png",
+        "source_sha256": "f01aad9ec30351b6ca97ebe34a65af1622fdd4df4b71e59bcb4b60adb3629be4",
+        "public_sha256": "f01aad9ec30351b6ca97ebe34a65af1622fdd4df4b71e59bcb4b60adb3629be4",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_21.png",
+        "source_sha256": "4e571bb178a018f674d778407b83b88e85fe242a75c06df3bf892523d53bbf58",
+        "public_sha256": "4e571bb178a018f674d778407b83b88e85fe242a75c06df3bf892523d53bbf58",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_22.png",
+        "source_sha256": "6c2e7ac54d38da34e6ef9af59e013f0c03c3b0462502ba744f5d2db104dcdf81",
+        "public_sha256": "6c2e7ac54d38da34e6ef9af59e013f0c03c3b0462502ba744f5d2db104dcdf81",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_23.png",
+        "source_sha256": "f692341b98780fc7d8a49d0b4c54ea463653c8ac5864c8d2300442ce5fe80abc",
+        "public_sha256": "f692341b98780fc7d8a49d0b4c54ea463653c8ac5864c8d2300442ce5fe80abc",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_24.png",
+        "source_sha256": "373a35b0c309ccbed41b59f0461f878fc926a320bc69be40a8ece002befea535",
+        "public_sha256": "373a35b0c309ccbed41b59f0461f878fc926a320bc69be40a8ece002befea535",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_25.png",
+        "source_sha256": "877d86de627b4a3082391b5db2e705a05af006a157aa420837c3c86f006fdf7f",
+        "public_sha256": "877d86de627b4a3082391b5db2e705a05af006a157aa420837c3c86f006fdf7f",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_26.png",
+        "source_sha256": "39ea81f1629745a9cec791e0cc452fdd75f7071a94baca0ed50c8d74251b03d0",
+        "public_sha256": "39ea81f1629745a9cec791e0cc452fdd75f7071a94baca0ed50c8d74251b03d0",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_27.png",
+        "source_sha256": "f8fb34da17e0dfd02aef4cf6556bf8f0cedbf0405ab857104dfd77ff1f9c8836",
+        "public_sha256": "f8fb34da17e0dfd02aef4cf6556bf8f0cedbf0405ab857104dfd77ff1f9c8836",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_28.png",
+        "source_sha256": "5b03ce2850f4b9efc045b4ce0f42fe9f6d0b7302c3d57b7db1d22b9731a858a6",
+        "public_sha256": "5b03ce2850f4b9efc045b4ce0f42fe9f6d0b7302c3d57b7db1d22b9731a858a6",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_29.png",
+        "source_sha256": "a389b652b1e714db14d7c84d4eb512891ce1a94f5a99c94a00fda5b799dfdff4",
+        "public_sha256": "a389b652b1e714db14d7c84d4eb512891ce1a94f5a99c94a00fda5b799dfdff4",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_30.png",
+        "source_sha256": "5cfa4da9f274d0f60a6102d94e8537eb4c85e77ab14d3dacca2fa727da8fae3d",
+        "public_sha256": "5cfa4da9f274d0f60a6102d94e8537eb4c85e77ab14d3dacca2fa727da8fae3d",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_31.png",
+        "source_sha256": "5203dde7362672d4a23759dbccf195b6f82294880b4e40d97dbd011f7b25fdee",
+        "public_sha256": "5203dde7362672d4a23759dbccf195b6f82294880b4e40d97dbd011f7b25fdee",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_32.png",
+        "source_sha256": "3ba7f8e8b6a5924a75a76627a5fcca010276ea53d9f090f877b399ddc6e5277d",
+        "public_sha256": "3ba7f8e8b6a5924a75a76627a5fcca010276ea53d9f090f877b399ddc6e5277d",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_33.png",
+        "source_sha256": "abc6d9c1ca48e8074a0116f2691b77f2905308c8edb096aa337b95249382c56e",
+        "public_sha256": "abc6d9c1ca48e8074a0116f2691b77f2905308c8edb096aa337b95249382c56e",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "assets/stickers/tendou_kei/CH0335_noweapon_spr_99.png",
+        "source_sha256": "eaf5651d4e0bb69a5178e89b41feef3f4734023ba07e9721cac7141fda683d2b",
+        "public_sha256": "eaf5651d4e0bb69a5178e89b41feef3f4734023ba07e9721cac7141fda683d2b",
+        "category": "included_original_game_image"
+      },
+      {
+        "path": "config.py",
+        "source_sha256": "6fe20bdb49af40f10420fdac5bd1716297074acc76db3f6997f6cde8a7be07f8",
+        "public_sha256": "a512656b7836b1c1d304672ea6df1ab8dc99b3ea16c22bd557ae59d7a7de80d0",
+        "category": "compatibility_fix"
+      },
+      {
+        "path": "context/manager.py",
+        "source_sha256": "10fd095b2c48bfc01a9ba97d287cb098da79d9e3ba3d0a95d2b50dbc9fd485f6",
+        "public_sha256": "d4b5ef71e447d2e6eae99c03436f0873d673298f3994405bdec95a14224fd5a9",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "core/chatbot.py",
+        "source_sha256": "43777425529c4062cb2ff8d5528227d83c18221b61f8b9c4ce8ef6095e57e12a",
+        "public_sha256": "3c3e40386a29dbe3762333646ca4a44c0bd573a58b70c06a59bd3ee934f396cc",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "core/latex.py",
+        "source_sha256": "a1b842d785a517674de780013c2bdd783791a1db5249506472d64c01b38e711f",
+        "public_sha256": "a1b842d785a517674de780013c2bdd783791a1db5249506472d64c01b38e711f",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "core/messages.py",
+        "source_sha256": "47ac2e9ab619d44757002f7f4014806280d2c1dfe3802389e528cb4a744eb229",
+        "public_sha256": "10a3dee74d71a43adb14973675974e6ae8b9f9d69d1f6821ec982345eba9cb0f",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "core/roleplay_chatbot.py",
+        "source_sha256": "915269917572393427f75739dce8d173b51f269700c967097d75eb53cc55e3f8",
+        "public_sha256": "915269917572393427f75739dce8d173b51f269700c967097d75eb53cc55e3f8",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "knowledge/__init__.py",
+        "source_sha256": "46afe740adbe2287c2f3eefa50b68ea0207391033ccffa259b19429a76e02a23",
+        "public_sha256": "46afe740adbe2287c2f3eefa50b68ea0207391033ccffa259b19429a76e02a23",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "knowledge/catalog.py",
+        "source_sha256": "2153a9791a44b066b559a821e92d2385d5db8b514e9c511e583185833b55c752",
+        "public_sha256": "2153a9791a44b066b559a821e92d2385d5db8b514e9c511e583185833b55c752",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "knowledge/chunker.py",
+        "source_sha256": "7a27d886a8dabc0c0adfb3709577506aa63781477582c560b0d0cf7181358085",
+        "public_sha256": "7a27d886a8dabc0c0adfb3709577506aa63781477582c560b0d0cf7181358085",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "knowledge/index.py",
+        "source_sha256": "229a6fe357738889dfadf05f5bdf38f5c1d7267ddbda07706a61426918f25f1e",
+        "public_sha256": "229a6fe357738889dfadf05f5bdf38f5c1d7267ddbda07706a61426918f25f1e",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "knowledge/loader.py",
+        "source_sha256": "f74926370f60d900a6fd2c2605b704018c78a40a1bd445ccb07af3f9bed2230b",
+        "public_sha256": "f74926370f60d900a6fd2c2605b704018c78a40a1bd445ccb07af3f9bed2230b",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "knowledge/manage.py",
+        "source_sha256": "722970758e5ba445523b07412837b4cbbf7b9c9259b419ad25940d80c8b3527e",
+        "public_sha256": "722970758e5ba445523b07412837b4cbbf7b9c9259b419ad25940d80c8b3527e",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "knowledge/registry.py",
+        "source_sha256": "b2a7cc2f715b888cd4b8a445d4f89018c19c2bc33dac1f0255672abf667f07cd",
+        "public_sha256": "b2a7cc2f715b888cd4b8a445d4f89018c19c2bc33dac1f0255672abf667f07cd",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "knowledge/retriever.py",
+        "source_sha256": "48fa30b3ef7743491922cff6c2dd407c465196024aa470e3db836641ac974f49",
+        "public_sha256": "48fa30b3ef7743491922cff6c2dd407c465196024aa470e3db836641ac974f49",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "knowledge/schema.py",
+        "source_sha256": "c0287250efb4596897a7f42f521255b372e2013c2edd8c729968ec88c6aee6e4",
+        "public_sha256": "c0287250efb4596897a7f42f521255b372e2013c2edd8c729968ec88c6aee6e4",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "llm/client.py",
+        "source_sha256": "0e4091f1456f6acb011693f3cc943a4f1dab5c6340330bc2c70b04c2714ae3dc",
+        "public_sha256": "5de27d19c4b44c3f03cde6c4b7fb3e1049c72a087d0dc52ee8e0aabd56702583",
+        "category": "compatibility_fix"
+      },
+      {
+        "path": "llm/utils.py",
+        "source_sha256": "b8c388ba2842c3b540985ca94d140150af7a08189ef6faa0c8d9071027b5d76e",
+        "public_sha256": "d2d2d06595dc6b0adc704a1ab02af2bc60c028dcb6d0bc04bf86b20c57409837",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/tendou_kei_kizuna2.md",
+        "source_sha256": "250bd47315b2dd286c96521ab0cdd12630a7d63fedbb51cb91fd491343f0ec90",
+        "public_sha256": "250bd47315b2dd286c96521ab0cdd12630a7d63fedbb51cb91fd491343f0ec90",
+        "category": "included_original_story_scene_card"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/tendou_kei_kizuna3.md",
+        "source_sha256": "b9af41259873c97d258c149977f97012a50b157d2e28197c655d46b73c163f0b",
+        "public_sha256": "b9af41259873c97d258c149977f97012a50b157d2e28197c655d46b73c163f0b",
+        "category": "included_original_story_scene_card"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/tendou_kei_kizuna3_reviewed.md",
+        "source_sha256": "5e20b248e2ca5d11a4b9d95c0551c602c258b69d8967858899cbfe2a3cf67170",
+        "public_sha256": "5e20b248e2ca5d11a4b9d95c0551c602c258b69d8967858899cbfe2a3cf67170",
+        "category": "included_original_story_scene_card"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/tendou_kei_kizuna4_reviewed.md",
+        "source_sha256": "8a9ca16e8245c68057131eced09c66a02b2be52ff6483b80cecd3ce64b931352",
+        "public_sha256": "8a9ca16e8245c68057131eced09c66a02b2be52ff6483b80cecd3ce64b931352",
+        "category": "included_original_story_scene_card"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/tendou_kei_kizuna6.md",
+        "source_sha256": "ef7425e68d4299e9afeb12de8314312d88a845b90933a4928a84ed677b0f7d98",
+        "public_sha256": "ef7425e68d4299e9afeb12de8314312d88a845b90933a4928a84ed677b0f7d98",
+        "category": "included_original_story_scene_card"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/tendou_kei_memoryhall.md",
+        "source_sha256": "ca1bb94e19999187cf9505d871877b58f5ced950c9f71e377fbeed4f287a0a2b",
+        "public_sha256": "20d8b73d95e3603096dce46d96ec86a8e0072b7a471cd6769a2a9b3729167a37",
+        "category": "included_original_story_scene_card_format_only"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/tendou_kei_valentine_perfect_plan_sliced_v2.md",
+        "source_sha256": "92ce75fdeb8727a8d02aa7ab7e7dc0c5a1a3a78c4e9a9dbe4c1c30bcfdb5cbd6",
+        "public_sha256": "92ce75fdeb8727a8d02aa7ab7e7dc0c5a1a3a78c4e9a9dbe4c1c30bcfdb5cbd6",
+        "category": "included_original_story_scene_card"
+      },
+      {
+        "path": "main.py",
+        "source_sha256": "f0ddd47c71aa908f176316c7ce37be43bef97135ad454cf8524ab97a2d6299bc",
+        "public_sha256": "e256646f68707319100abc37115755042a1ab837c5c3eff14b4b25eec23b65d6",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "memory/embedder.py",
+        "source_sha256": "83fc6d44474003b26bd0bc7d6fe6e91543a623f00cbde52a725e03532620b294",
+        "public_sha256": "83fc6d44474003b26bd0bc7d6fe6e91543a623f00cbde52a725e03532620b294",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "memory/generator.py",
+        "source_sha256": "887a25ee9990f537b055ad649969ea4fae35a830f02c77b5efeff57aa87f8b34",
+        "public_sha256": "2f4bf4b1679857cfeaa8b03c9ccc8478c766bedce190621e44179d3d3158e4bf",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "memory/index.py",
+        "source_sha256": "073101c3eb28343709a77300f7e428a74b67c9725ebcfb6ee1a2217aaba14dac",
+        "public_sha256": "073101c3eb28343709a77300f7e428a74b67c9725ebcfb6ee1a2217aaba14dac",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "memory/local_embedder.py",
+        "source_sha256": "f516c0bb1d7d6ac6fd2cd1c5dd3449e2196528aa7ceee2aaa06672fe97940f56",
+        "public_sha256": "f516c0bb1d7d6ac6fd2cd1c5dd3449e2196528aa7ceee2aaa06672fe97940f56",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "memory/manager.py",
+        "source_sha256": "582f6b17b513bd15710318db149def3f8f4a5a6911987af537f755a14c14d658",
+        "public_sha256": "582f6b17b513bd15710318db149def3f8f4a5a6911987af537f755a14c14d658",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "memory/retriever.py",
+        "source_sha256": "eb81271ec57950c81549a90d5a8c8e57e8e2f092aea1135d7b45fc76e4fe5892",
+        "public_sha256": "eb81271ec57950c81549a90d5a8c8e57e8e2f092aea1135d7b45fc76e4fe5892",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "prompts/chat/__init__.py",
+        "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "prompts/chat/base.py",
+        "source_sha256": "8b251c5da6f16cfe40e1a7cc9b9152c11ff66551bf4a2fc7b2b3b035e7ff1f64",
+        "public_sha256": "6d053fce8ac1820e6d1d4f53dc55f8a5891cb7317941f54b0f1906b175533f33",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/chat/brainstorm.py",
+        "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "prompts/chat/chat.py",
+        "source_sha256": "2a6b73674583f0e8197fc835ae550aab724d2d2e81e8af6f5f03036cc2c1f324",
+        "public_sha256": "34ab09077c74cd65c00112d59509759d3d46349e08ec4eea85c591cc7e1612a8",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/chat/exam.py",
+        "source_sha256": "ba162acd035a5a6d24de2eca346eb68613ac78749c7d69d9e4a6f8c1de19baec",
+        "public_sha256": "4961722cd1a08755a8402ca0fca6b840882bdbd16dc704e7533601ee4536bb9f",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/chat/formatting.py",
+        "source_sha256": "a1d24122c756ca4b7d9e5b26a4f1f19feca7d04325fbb3ab8eb31d45ec9d613e",
+        "public_sha256": "a1d24122c756ca4b7d9e5b26a4f1f19feca7d04325fbb3ab8eb31d45ec9d613e",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "prompts/chat/latex.py",
+        "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "prompts/chat/paper.py",
+        "source_sha256": "1609622136dc3ad1302735f0c57beb95829541df0b3b1db4b418fc389f4be04e",
+        "public_sha256": "5020c9a222c65d3a86cdca02808b25362ad029acc9ea95c56c5cb72047a61d4f",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/manager.py",
+        "source_sha256": "acd5426760f4ec5b90a693d0dc5af9e3dae6219b0e4e5574f7e8c889a0e1b9fc",
+        "public_sha256": "370558c3c72869b8554c119517a63fbdee03effd2f754bea6a3bee1e8104facd",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/memory/base.py",
+        "source_sha256": "07b559a995367677cd5b50e024368952a826d969f0bb224e5ad4f87e9bef354d",
+        "public_sha256": "6cee6f73652a34e4fc7436336c5af5a737f8895dfa8459cbe90c31533ab1f1fa",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/memory/chat.py",
+        "source_sha256": "92aeb77d46f5eeb0be3ceb77e4ee287f816149702ef06d8278b0e2d6451fd75a",
+        "public_sha256": "92aeb77d46f5eeb0be3ceb77e4ee287f816149702ef06d8278b0e2d6451fd75a",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "prompts/memory/exam.py",
+        "source_sha256": "670b6e3ef0f03f9b4617d60baa754d8094c51cfcff98ebb08b5fa5f9346587e9",
+        "public_sha256": "7bcf36825a1157eea0d39ce7c3b98515551a9f5f210212841658161ceb9416e1",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/memory/paper.py",
+        "source_sha256": "03c6222eaf3a9d369b82089d53d52eb43093b26c3793889e68757c71abc17b05",
+        "public_sha256": "9ee9053a98d4de56b1323f7da417926dc82a4034a1e6d05a000b87c634a740da",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/summary/chat.py",
+        "source_sha256": "5a38014404d3543446fbc51768f2206882e10da7986873bcbf7a220b2a8badb1",
+        "public_sha256": "5a38014404d3543446fbc51768f2206882e10da7986873bcbf7a220b2a8badb1",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "prompts/summary/default.py",
+        "source_sha256": "b4928b25bf48301c520bb9e57550a6389142ddca641e99dfefbdaf82afd25386",
+        "public_sha256": "b78b900ba6e1ec7e8e21a1010d020ce2bdd0eaeb6d86783004090c8b9b1caf65",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/summary/exam.py",
+        "source_sha256": "6dc190c023ba96cd36b6f84609865b69d4e2d4143b84745d2f791a1be11419a4",
+        "public_sha256": "347fdd92fd226a1236af2850f606b58a185172302ddab7736cd9183473c72e81",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "prompts/summary/paper.py",
+        "source_sha256": "3cc770d9b3bd9b822ca099add7f9b9addde385b63ca1f6af5824114adc7dbd43",
+        "public_sha256": "1840fea593baaef6f887306ae221e77cd1a9b6c47e2e46c203ac03b8cfc7b9db",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "roleplay/__init__.py",
+        "source_sha256": "f9f9ad4f50f0579b69343ac45bb72f5f4a227a28375a328410b829a38155f3df",
+        "public_sha256": "f9f9ad4f50f0579b69343ac45bb72f5f4a227a28375a328410b829a38155f3df",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/alarms.py",
+        "source_sha256": "e761659ba1e2b184ce931170ebc67f564ca1ccecf0bb7021ead116a0bb5b1fcb",
+        "public_sha256": "e761659ba1e2b184ce931170ebc67f564ca1ccecf0bb7021ead116a0bb5b1fcb",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/evidence/__init__.py",
+        "source_sha256": "c6394ceae57b322c715b00f32e5deadb95cfa1439ad495a9437fb31879ae7297",
+        "public_sha256": "c6394ceae57b322c715b00f32e5deadb95cfa1439ad495a9437fb31879ae7297",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/evidence/index.py",
+        "source_sha256": "c1a09ee34b639477a6c1656818e8b187b6d05513fbba35fedf9eb33096b26490",
+        "public_sha256": "c1a09ee34b639477a6c1656818e8b187b6d05513fbba35fedf9eb33096b26490",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/evidence/interaction_retriever.py",
+        "source_sha256": "8a9545d903533256936433319c2dfabc5b5f1662aaba05cc314813bc15d82a28",
+        "public_sha256": "8a9545d903533256936433319c2dfabc5b5f1662aaba05cc314813bc15d82a28",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/evidence/interaction_trace.py",
+        "source_sha256": "1d29b3f0d768f118e2cf2b8c1b2824d9034a22ab749f2bf8486d38bbeb470855",
+        "public_sha256": "1d29b3f0d768f118e2cf2b8c1b2824d9034a22ab749f2bf8486d38bbeb470855",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/evidence/loader.py",
+        "source_sha256": "acc9383e9d3305b838b23d939183ab4710348dd2b787b60bb1106b21597a5e4b",
+        "public_sha256": "acc9383e9d3305b838b23d939183ab4710348dd2b787b60bb1106b21597a5e4b",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/evidence/qwen_reranker.py",
+        "source_sha256": "877c7de8a16bc0517dfe0005c1f09f600e3421847b92b5cbbba5e4ea2bef4615",
+        "public_sha256": "877c7de8a16bc0517dfe0005c1f09f600e3421847b92b5cbbba5e4ea2bef4615",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/evidence/relationship_pre_retrieval.py",
+        "source_sha256": "cec224195323cc4e838041e91de127e7343be43bed2e299ad280ea273110d8b3",
+        "public_sha256": "7119906a3b349026093d25de3254239bdbbe548f996cd0f0ec306f3cf8be66b1",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "roleplay/evidence/retriever.py",
+        "source_sha256": "c264f694ac01ae46728ba63b32411efbae29a128975c41636f4bdf87164aaf1a",
+        "public_sha256": "c264f694ac01ae46728ba63b32411efbae29a128975c41636f4bdf87164aaf1a",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/evidence/scene_view.py",
+        "source_sha256": "f8c612f6828a7fd66e12c4411c63a3c0b9f8f7f5163a0b64777a51b1a04d5844",
+        "public_sha256": "f8c612f6828a7fd66e12c4411c63a3c0b9f8f7f5163a0b64777a51b1a04d5844",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/evidence/schema.py",
+        "source_sha256": "9f0f892c595f09df179e109500e07db2196e190bec1bceb765553ea94c343937",
+        "public_sha256": "9f0f892c595f09df179e109500e07db2196e190bec1bceb765553ea94c343937",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/memory/__init__.py",
+        "source_sha256": "bbb3840d2d45ba3655047eaa0ac3246df16ee79113545f91fcbdcacaa3b95082",
+        "public_sha256": "bbb3840d2d45ba3655047eaa0ac3246df16ee79113545f91fcbdcacaa3b95082",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/memory/generator.py",
+        "source_sha256": "6c31453eb2c6ee5611b8d275a7d9036a03f44357510b0f13a5cbd4956251136a",
+        "public_sha256": "6c31453eb2c6ee5611b8d275a7d9036a03f44357510b0f13a5cbd4956251136a",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/memory/manager.py",
+        "source_sha256": "db87c7253c1059dc82df77cf532eef24479d11433e47e08c31663b766d3399af",
+        "public_sha256": "db87c7253c1059dc82df77cf532eef24479d11433e47e08c31663b766d3399af",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/memory/retriever.py",
+        "source_sha256": "c79fe133f5b3fa0117aea6378a14517cde417daf0997a186c802f2bbf1420c69",
+        "public_sha256": "c79fe133f5b3fa0117aea6378a14517cde417daf0997a186c802f2bbf1420c69",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/memory/service.py",
+        "source_sha256": "420dc817a1ddbc70e90730230f44f66053f512b68a06a3d202cb524ee2880ef9",
+        "public_sha256": "420dc817a1ddbc70e90730230f44f66053f512b68a06a3d202cb524ee2880ef9",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/narration.py",
+        "source_sha256": "03860ddddb12b7e1835163368c623413109fa4bad7814521668d19fb357d0084",
+        "public_sha256": "03860ddddb12b7e1835163368c623413109fa4bad7814521668d19fb357d0084",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/session_manager.py",
+        "source_sha256": "d18a6a8054ea0ee88bdf03562a7f08300074f2d8343c306478bfdc08ed3fed52",
+        "public_sha256": "d18a6a8054ea0ee88bdf03562a7f08300074f2d8343c306478bfdc08ed3fed52",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/sticker_llm_selector.py",
+        "source_sha256": "1531cf3388e364b51545f5b8472a78765382a61c7002fa244c1d2855001b452a",
+        "public_sha256": "5b3ca026ddd80127e4dc0b9dec1ed3d7df17c5e510ba6941f8482302dd100ba0",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "roleplay/sticker_messages.py",
+        "source_sha256": "a19992e34675997b911142cad2d3893380972c3531b154146f8100cc4a66e26a",
+        "public_sha256": "a19992e34675997b911142cad2d3893380972c3531b154146f8100cc4a66e26a",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roleplay/visual_scene.py",
+        "source_sha256": "e931cbf1952105280008a70ef366fd9ec1c0674a1691051e72b4f0ef9c8a89e7",
+        "public_sha256": "e931cbf1952105280008a70ef366fd9ec1c0674a1691051e72b4f0ef9c8a89e7",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/__init__.py",
+        "source_sha256": "114497a053d2b4582b263552531aa63c181935ac4396f7be093a29652d624712",
+        "public_sha256": "114497a053d2b4582b263552531aa63c181935ac4396f7be093a29652d624712",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/loader.py",
+        "source_sha256": "4d059798f9a02b06839db064842b11a72048f97e956838fa10b324724f140d4b",
+        "public_sha256": "4d059798f9a02b06839db064842b11a72048f97e956838fa10b324724f140d4b",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/profiles/tendou_kei.yaml",
+        "public_path": "roles/profiles/tendou_kei.yaml",
+        "source_sha256": "d03fa21f1448dcf499a30b0cad59ac941b125da5b5ecfd614ade93970c9a565f",
+        "public_sha256": "b38b119a0fffa0a15f151ba619fcac9447585c1240b8d635a5fe225d8cc5747d",
+        "category": "compatibility_fix"
+      },
+      {
+        "path": "roles/prompt_builder.py",
+        "source_sha256": "abe2c39a9d9d41d3d8e35f535cb82ad9b902ee8f9969affc111a5ff9853e0c9c",
+        "public_sha256": "abe2c39a9d9d41d3d8e35f535cb82ad9b902ee8f9969affc111a5ff9853e0c9c",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/registry.py",
+        "source_sha256": "be854c611b795f256bcf66f786804aee02993334b8b1856314553d0697a308bc",
+        "public_sha256": "be854c611b795f256bcf66f786804aee02993334b8b1856314553d0697a308bc",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/schema.py",
+        "source_sha256": "adac6d6df93e2e8f5d7b1e042911669b9d8abc88fa369feb651e7787cb6265c6",
+        "public_sha256": "adac6d6df93e2e8f5d7b1e042911669b9d8abc88fa369feb651e7787cb6265c6",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/stickers/__init__.py",
+        "source_sha256": "ce93c8d93d54a17f4c160700172eb7077e592e38d40eca450ad3b078a8342df7",
+        "public_sha256": "ce93c8d93d54a17f4c160700172eb7077e592e38d40eca450ad3b078a8342df7",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/stickers/loader.py",
+        "source_sha256": "fa009700479ab70132b4b92efd6e99dff219d9bec4c022d4f9289cf73a6bf4ca",
+        "public_sha256": "fa009700479ab70132b4b92efd6e99dff219d9bec4c022d4f9289cf73a6bf4ca",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/stickers/packs/tendou_kei.yaml",
+        "public_path": "roles/stickers/packs/tendou_kei.yaml",
+        "source_sha256": "8b225e6732a786132e72f108e15b9c464979f955868cc417cd328a3e097f7dc6",
+        "public_sha256": "8b225e6732a786132e72f108e15b9c464979f955868cc417cd328a3e097f7dc6",
+        "category": "reviewed_authored_metadata"
+      },
+      {
+        "path": "roles/stickers/registry.py",
+        "source_sha256": "74dd7b339d1bb146206a27545c76411cf9889d02636ad9d5297f31c5189a4eb0",
+        "public_sha256": "74dd7b339d1bb146206a27545c76411cf9889d02636ad9d5297f31c5189a4eb0",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/stickers/renderer.py",
+        "source_sha256": "52024204ec3c8fecb88c4133d4a302333d5b7b4dcc245fa390cd87de5d4557bb",
+        "public_sha256": "52024204ec3c8fecb88c4133d4a302333d5b7b4dcc245fa390cd87de5d4557bb",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "roles/stickers/schema.py",
+        "source_sha256": "1efb78940c7f149d2e324e4be2ee970254d30197034a832533ca271db67e56ec",
+        "public_sha256": "1efb78940c7f149d2e324e4be2ee970254d30197034a832533ca271db67e56ec",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "session/manager.py",
+        "source_sha256": "c3224b3873e129895eb7cef8234f7406eeac0c72c4bfdd26be73476615bfc7d3",
+        "public_sha256": "9d12bf3c5b76a5107a72100c29e5eaa3908c2a63fc78ed47cc0633f449c4dcaa",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "summary/generator.py",
+        "source_sha256": "de0a1ff4481d435a3c912cb4a98ddcfbe723515ca8eea55aded6fca0387e8cb5",
+        "public_sha256": "b37b0c4ca8b28446117c270a01869556007b258586d86ffb497c7912548757db",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "summary/manager.py",
+        "source_sha256": "21dd970305e795b198068ef23b02703f49ea4685d384ceb03f82c94ce2e961fb",
+        "public_sha256": "99ed9ebbef0a3d3c8b7ddd40677fe1f7050759bd87f9c854568e275e60e1e89f",
+        "category": "baseline_code_format_only"
+      },
+      {
+        "path": "web/__init__.py",
+        "source_sha256": "8aa133bb5293e135493a177c411c21cbd5e3ec7b9ff971272d9f7d63d26f5738",
+        "public_sha256": "8aa133bb5293e135493a177c411c21cbd5e3ec7b9ff971272d9f7d63d26f5738",
+        "category": "baseline_code_byte_identical"
+      },
+      {
+        "path": "web/api.py",
+        "source_sha256": "bf39136aa5413b270371b221d76cd8a4773f195fde16eee9b09d01d257f431df",
+        "public_sha256": "f51d140843a49f04058849ccf15f0e7bce3bab031d775d0ecdceec572a585c04",
+        "category": "compatibility_fix"
+      },
+      {
+        "path": "web/server.py",
+        "source_sha256": "7ef186df92d5c5c7133f5e5539d776a57e12b075c688f7f07ef00b3a81f27485",
+        "public_sha256": "a49ec65ab2bdff5203c354d926bbcd3ff7fb7a556b2a9876fe54a137a1940078",
+        "category": "compatibility_fix"
+      }
+    ],
+    "excluded_data": [
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/01_current_identity.md",
+        "source_sha256": "ac3f0a8ea13f2d29ce58dda97d86963ceb1b71f20b828e0faa292ae865f56f6e",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/02_millennium_and_game_development_department.md",
+        "source_sha256": "4776cf3bcc6475de97c74bac3aa32ba28c5383376a06bd57e67a820f0907673b",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/03_super_phenomenon_task_force.md",
+        "source_sha256": "ae0d6aed1efbaf7b56229106266ffd346bc851ea675250808526649130afce38",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/04_nameless_gods_and_key_origin.md",
+        "source_sha256": "1c04ab67f431e81df7c3f2b325e4be6e42cc38f06935d7b7dc508022e2bc804b",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/05_atrahasis_and_identity_conflict.md",
+        "source_sha256": "fd445a39d9f7c6cb0fd01a3e2fd6970f552f60a7570d7a2bc8fd6717f94711b3",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/06_disappearance_and_kei_sav.md",
+        "source_sha256": "a4dedc764bc7616d8c8e7a0a4171af587f9c52a74f7baa085eac4a43dfc8cabd",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/07_decagrammaton_and_steel_continent.md",
+        "source_sha256": "52ebfd1f555b1a803f5c3eb9eded55a159be8f68ad5f5943c038a7c2645cc8d3",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/08_body_and_self_definition.md",
+        "source_sha256": "7343f082fd74c1928a5d04e6d9dae0b4c79ffd68c9aead212fe54caf64fb1d56",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/09_relationships_arisu_and_sensei.md",
+        "source_sha256": "d686bdb0e999d5bdffcf28a6991fd2507943057e274de79af017d053553176bf",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/10_relationships_millennium_and_decagrammaton.md",
+        "source_sha256": "3a4026a80c82a64af4da3065a0edab0e2377129d78881bb38df7c6646a9fbf57",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/11_personal_timeline.md",
+        "source_sha256": "5303cfd6963b49f0ed0aeaeb9856462277629a4c00e0688d68d8ce696a4f1604",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/12_epistemic_scope_and_anti_hallucination.md",
+        "source_sha256": "d9be995d164b6d2a1422da9261661f3c193a74475a0c8106b63e4283cfa82b71",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/13_worldview_and_daily_life.md",
+        "source_sha256": "eb3f345febd77d66b8147a52aa947ea12077ab0ccfa3c40ec18976847cc21712",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/14_canon_guardrails_and_retrieval_guidance.md",
+        "source_sha256": "6fa8987b8510c979ed46d432b91d65c3167e00bacd1518fb53a60d594cf987a8",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents/15_sources_maintenance_and_world_positioning.md",
+        "source_sha256": "a36cc775559b1326703740b5c74f00436232b72b5c91947da67c76856a0acbcd",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/documents.jsonl",
+        "source_sha256": "30cacd9d86457507509debbfbe112dcbfd05a49cb688dfbffe39881c0fd137fd",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/knowledge_bases/tendou_kei_lore/manifest.json",
+        "source_sha256": "364194cb30d622a6b7bcb3950aa0f0e5f85f6426603fdbfefff678533ff0aee9",
+        "reason": "private lore/source rights not cleared"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/kei_fanwork_scene_cards_curated_01_20.md",
+        "source_sha256": "53762ea976e2068d12b6a993f5729e115c9dff593e0544f260c370153a955f62",
+        "reason": "scene dialogue/source rights not cleared"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/kei_nonwork_dialogue_scenes_review_sensei_normalized.md",
+        "source_sha256": "e2953823cae2dcf45969c19ae41503226fc6c77a626ca48d0943139c3eaba121",
+        "reason": "scene dialogue/source rights not cleared"
+      },
+      {
+        "path": "local_data/roleplay_cards/tendou_kei/tendou_kei_doujinshi.md",
+        "source_sha256": "98f94bac383b82a4cfe013186e1042ae193a52cfc75692b8ae5b683d625e72b1",
+        "reason": "scene dialogue/source rights not cleared"
+      },
+      {
+        "path": "local_data/roleplay_evidence/tendou_kei.jsonl",
+        "source_sha256": "d60bb6f3be20ef9e35182db6f4ab964686957f672da12fcac183ae48cdb5bb23",
+        "reason": "current 78-row evidence; provenance to frozen 32 rows unverified and scene text redistribution not cleared"
+      }
+    ],
+    "compatibility_fixes": {
+      "config.py": "default role points to Kei",
+      "roles/profiles/tendou_kei.yaml": "Windows avatar path changed to POSIX slash; other Profile content restored",
+      "web/api.py": "KnowledgeLoadError import",
+      "web/server.py": "asset-free API mount and root response",
+      "llm/client.py": "lazy provider client permits API import without key"
+    },
+    "note": "Public file inventory and hashes are independently recorded in export PUBLIC_MANIFEST.json and checksums.sha256; original game-material rights are separate from project code.",
+    "included_material_summary": {
+      "sticker_png": 34,
+      "avatar_png": 1,
+      "original_story_scene_markdown": 7,
+      "sticker_yaml": 1,
+      "source_attribution": "kivo.wiki character page for images; Blue Archive game story for Scene Markdown; see docs/SCENE_SOURCE_NOTES.md and THIRD_PARTY_NOTICES.md"
+    }
+  }
+}

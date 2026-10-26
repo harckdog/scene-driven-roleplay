@@ -12,9 +12,9 @@ Role Profile + 当前对话 + Memory/Knowledge + 检索到的 Scene
                                Selector → 贴图或 null
 ```
 
-三个关键取舍：人格描述是上下文参考，不是逐条执行的行为规则；Scene 提供说话和互动先例，不自动建立当前事实；Generator 定稿台词与 affect，Selector 只选图、不改词，并允许 `null`。这种简化减少了模板化及单轮演完情绪的诱因，也失去了对显式状态转移的细粒度控制。详见 [架构取舍](docs/ARCHITECTURE_DECISIONS.md) 与 [失败案例](docs/FAILURE_CASES.md)。
+三个关键取舍：人格描述是上下文参考，不是逐条执行的行为规则；Scene 提供说话和互动先例，不自动建立当前事实；Generator 定稿台词与 affect，Selector 只选图、不改词，并允许 `null`。这种简化减少了模板化及单轮演完情绪的诱因，也失去了对显式状态转移的细粒度控制。详见 [架构取舍](docs/ARCHITECTURE_DECISIONS.md)、[失败案例](docs/FAILURE_CASES.md) 与 [源文件及排除清单](docs/SOURCE_AUDIT.json)。
 
-公开包保留经过精简审查的凯伊 Profile、代码和文档；只在测试中临时构造合成 Scene。它不含原项目的完整凯伊 Scene、贴图配置和图片、官方游戏素材或台词、真实聊天与记忆、模型权重、前端和 API Key，因此只能离线验证数据契约、导入和局部逻辑；完整凯伊体验需要另行取得有权使用的数据、模型和客户端。这里的 `Kei v1.1` 是拟用 Release 名称，尚未发布 GitHub Release。本地未发现可验证的 `kei-v1.1` Tag；本快照是从原 AI4MathAssistant 工作树（当时 HEAD `86c57fdc2cd7fd30f8e0063841664b6457c745da`）整理而来的**独立新仓库**，不声称从冻结 Tag 导出。
+公开包包含当前工作树的第一人称凯伊 Profile（仅修正头像路径）、34 张凯伊贴图 PNG、1 张头像、对应贴图 YAML、7 份原作剧情人工整理的 Scene Markdown、代码和详细开发手册。素材来源及作者添加的分段和标注见[场景整理说明](docs/SCENE_SOURCE_NOTES.md)与[第三方声明](THIRD_PARTY_NOTICES.md)。它仍不含转换后的 78 条 evidence、私有 lore、真实聊天与记忆、日志、模型权重、前端和 API Key；合成 Scene 只用于离线协议测试。这里的 `Kei v1.1` 是拟用 Release 名称，尚未发布 GitHub Release。本地未取得可验证的 `kei-v1.1` 冻结包或 Tag；原工作树当前 78 条 evidence 不能认作历史所述冻结版 32 条的子集；本快照是从原 AI4MathAssistant 工作树（当时 HEAD `86c57fdc2cd7fd30f8e0063841664b6457c745da`）整理而来的**独立新仓库**，不声称从冻结 Tag 导出。
 
 ## 阅读路径
 
@@ -27,7 +27,7 @@ Role Profile + 当前对话 + Memory/Knowledge + 检索到的 Scene
 | 会话、记忆与知识 | [`roleplay/session_manager.py`](roleplay/session_manager.py)、[`roleplay/memory/`](roleplay/memory/)、[`knowledge/`](knowledge/) |
 | API | [`web/server.py`](web/server.py)、[`web/api.py`](web/api.py) |
 
-完整的公开版开发手册见 [RolePlay Development Manual](docs/ROLEPLAY_DEVELOPMENT_MANUAL.md)。仓库内保留经审查的 [`tendou_kei.yaml`](roles/profiles/tendou_kei.yaml)；测试中的合成 Scene 仅用于验证协议，不代表原作角色。
+含技术正文的公开版开发手册见 [RolePlay Development Manual](docs/ROLEPLAY_DEVELOPMENT_MANUAL.md)。仓库内保留当前工作树 Profile 的 [`tendou_kei.yaml`](roles/profiles/tendou_kei.yaml) 和作者标注的[贴图 YAML](roles/stickers/packs/tendou_kei.yaml)；测试中的合成 Scene 仅用于验证协议，不代表原作角色。
 
 ## 离线验证与导出
 
@@ -39,7 +39,7 @@ python -m pytest -q tests
 python tools/export_public_kei.py --output /path/outside/worktree/kei-v1.1-public
 ```
 
-导出目录必须事先不存在；脚本采用明确白名单，不携带 `.git`，并生成 `PUBLIC_MANIFEST.json` 和 `checksums.sha256`。运行 API 可用 `uvicorn web.server:app --host 127.0.0.1 --port 8000`，打开 `/docs` 查看接口；根路径明确提示前端未打包。真实生成需要自行配置 `.env`、模型与数据，合成示例的文本质量不代表凯伊效果。
+导出目录必须事先不存在；脚本采用明确白名单，不携带 `.git`，并生成 `PUBLIC_MANIFEST.json` 和 `checksums.sha256`。运行 API 可用 `uvicorn web.server:app --host 127.0.0.1 --port 8000`，打开 `/docs` 查看接口；根路径明确提示前端未打包。真实生成需要自行配置 `.env`、模型及可用的 evidence/知识数据；本包的 Scene Markdown 不会自动转换为运行时 JSONL。
 
 本工作受 [ChatHaruhi](https://github.com/LC1332/Chat-Haruhi) 的场景语料方法启发，也与角色卡、Lorebook、SillyTavern 等生态中的上下文供给方式有相似处；不主张首创 Scene RAG 或贴图选择。第三方与权利边界见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。作者尚未为自有代码选择 MIT 或 Apache-2.0 等许可证；在许可证及二创素材授权范围确认前，不应假定本仓库授予再分发许可。
 

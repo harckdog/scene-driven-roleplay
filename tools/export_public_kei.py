@@ -10,7 +10,7 @@ import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT_ID = "kei-v1.1-public"
-SOURCE_BASELINE = "86c57fdc2cd7fd30f8e0063841664b6457c745da"
+SOURCE_WORKTREE_HEAD = "86c57fdc2cd7fd30f8e0063841664b6457c745da"
 FILE_ALLOWLIST = (
     ".env.example",
     ".gitignore",
@@ -24,6 +24,9 @@ FILE_ALLOWLIST = (
     "config.py",
     "roles/profiles/tendou_kei.yaml",
     "roles/stickers/packs/README.md",
+    "roles/stickers/packs/tendou_kei.yaml",
+    "docs/SOURCE_AUDIT.json",
+    "docs/SCENE_SOURCE_NOTES.md",
     "docs/ARCHITECTURE_DECISIONS.md",
     "docs/FAILURE_CASES.md",
     "docs/ROLEPLAY_DEVELOPMENT_MANUAL.md",
@@ -34,16 +37,28 @@ CODE_DIRS = (
     "roleplay", "roles", "session", "summary", "web",
 )
 EXTRA_CODE = ("tools/export_public_kei.py", "tests/test_public_snapshot.py")
+SCENE_CARDS = (
+    "tendou_kei_kizuna2.md", "tendou_kei_kizuna3.md",
+    "tendou_kei_kizuna3_reviewed.md", "tendou_kei_kizuna4_reviewed.md",
+    "tendou_kei_kizuna6.md", "tendou_kei_memoryhall.md",
+    "tendou_kei_valentine_perfect_plan_sliced_v2.md",
+)
+PUBLIC_MEDIA = (
+    "assets/avatars/tendou_kei.png",
+    *(f"assets/stickers/tendou_kei/CH0335_noweapon_spr_{number:02d}.png" for number in (*range(1, 34), 99)),
+)
 EXCLUDED = (
-    ".git history", ".env and secrets", "private scene cards and unreviewed profiles",
-    "real chats, memory, indexes, logs", "model weights", "official images and dialogue",
+    ".git history", ".env and secrets", "current 78-row converted scene evidence",
+    "fanwork and other unselected Scene cards", "private lore documents",
+    "real chats, memory, indexes, logs", "model weights",
     "Momotalk and Base-56 frontend/source",
 )
 
 
 def public_files() -> list[Path]:
     """Return only reviewed public paths, independent of Git tracking state."""
-    paths = [Path(value) for value in (*FILE_ALLOWLIST, *EXTRA_CODE)]
+    paths = [Path(value) for value in (*FILE_ALLOWLIST, *EXTRA_CODE, *PUBLIC_MEDIA)]
+    paths.extend(Path("local_data/roleplay_cards/tendou_kei") / name for name in SCENE_CARDS)
     for directory in CODE_DIRS:
         paths.extend((ROOT / directory).rglob("*.py"))
     relative = sorted({path.relative_to(ROOT) if path.is_absolute() else path for path in paths})
@@ -74,8 +89,9 @@ def export(output: Path) -> dict:
     manifest = {
         "snapshot_id": SNAPSHOT_ID,
         "release_name": "Kei v1.1",
-        "source_baseline": SOURCE_BASELINE,
-        "source_note": "Independent curated copy of working-tree code; no verified kei-v1.1 tag",
+        "source_worktree_head": SOURCE_WORKTREE_HEAD,
+        "frozen_source_status": "unverified: no local kei-v1.1 tag or frozen package",
+        "source_note": "Independent public derivative from inspected working tree; current 78 evidence rows are not asserted to be the frozen 32-row release",
         "files": [str(path) for path in files],
         "excluded": list(EXCLUDED),
         "integrity_note": "checksums.sha256 covers payload files only, not itself or PUBLIC_MANIFEST.json",

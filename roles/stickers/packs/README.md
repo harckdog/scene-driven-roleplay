@@ -1,1 +1,1 @@
-Sticker packs are intentionally excluded from this public architecture snapshot. Add a reviewed manifest and licensed image files locally if you have the rights to use them. The selector can return `null` when no asset is available.
+The author-written `tendou_kei.yaml` metadata and its 34 referenced PNG files are included, along with the Kei avatar. The images were supplied by the author with provenance attributed to https://kivo.wiki/data/character/518; image rights are separate from the YAML and project code. See `THIRD_PARTY_NOTICES.md`.
