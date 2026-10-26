@@ -64,7 +64,7 @@ $$
 
 $$
 \min_{g\in\mathcal G}\mathbb E_{(u,h)\sim\mathcal D}
-D\quad \left(q_{\theta,d}(\cdot\mid u,h,g(u,h)),p_C(\cdot\mid u,h)\right).
+\ D \left(q_{\theta,d}(\cdot\mid u,h,g(u,h)),p_C(\cdot\mid u,h)\right).
 $$
 
 其中 $q_{\theta,d}$ 是给定解码配置下的实际输出分布，$D$ 是尚未确定的分布距离。这只是描述我希望达到的方向：**调整上下文，让模型的自然输出更接近目标角色，而不是仅仅满足更多可见的行为规则。** 我没有实际估计这些分布，也没有将上式作为训练目标求解。
