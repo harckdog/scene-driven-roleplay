@@ -1,4 +1,4 @@
-"""Offline checks for the reviewed, asset-free public snapshot."""
+"""Offline checks for the reviewed public snapshot."""
 
 from __future__ import annotations
 
@@ -123,12 +123,17 @@ def test_allowlist_export_excludes_private_trees(tmp_path: Path) -> None:
     files = public_files()
     assert Path("roles/profiles/tendou_kei.yaml") in files
     assert Path("roles/stickers/packs/tendou_kei.yaml") in files
+    assert Path("LICENSE") in files
+    assert Path("docs/history/tendou_kei_legacy_schema_v1.yaml") in files
     assert Path("docs/SOURCE_AUDIT.json") in files
     assert all("sample_character" not in str(path) for path in files)
     manifest = export(target)
     assert manifest["snapshot_id"] == "kei-v1.1-public"
+    assert manifest["release_name"] == "Kei v1.1 — Public Architecture Snapshot"
     assert (target / "PUBLIC_MANIFEST.json").is_file()
     assert (target / "checksums.sha256").is_file()
+    assert (target / "LICENSE").read_bytes() == (Path(__file__).resolve().parents[1] / "LICENSE").read_bytes()
+    assert (target / "docs/history/tendou_kei_legacy_schema_v1.yaml").is_file()
     assert not (target / ".git").exists()
     assert len(list(target.rglob("*.png"))) == 35
     assert len(list((target / "local_data/roleplay_cards/tendou_kei").glob("*.md"))) == 7

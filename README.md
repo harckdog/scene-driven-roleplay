@@ -68,7 +68,7 @@ python -m pytest -q tests
 python tools/export_public_kei.py --output /path/outside/worktree/kei-v1.1-public
 ```
 
-以上是供本地复查的命令。导出目录必须事先不存在；脚本采用明确白名单，不携带 `.git`，并生成 `PUBLIC_MANIFEST.json` 和 `checksums.sha256`。目前导出白名单遗漏 `LICENSE`，也尚未包含本轮新增的历史角色卡。若另行制作包含本次文档的导出包，需要先补齐并验证导出清单。
+以上是供本地复查的命令。导出目录必须事先不存在；脚本采用明确白名单，包含 `LICENSE`、历史角色卡及经审查的贴图和 Scene 文件，不携带 `.git`，并生成 `PUBLIC_MANIFEST.json` 和 `checksums.sha256`。
 
 运行 API 可用 `uvicorn web.server:app --host 127.0.0.1 --port 8000`，打开 `/docs` 查看接口；根路径明确提示前端未打包。真实生成需要自行配置 `.env`、模型及可用的 evidence/知识数据；本包的 Scene Markdown 不会自动转换为运行时 JSONL。
 

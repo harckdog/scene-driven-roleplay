@@ -15,6 +15,7 @@ FILE_ALLOWLIST = (
     ".env.example",
     ".gitignore",
     "README.md",
+    "LICENSE",
     "CONTRIBUTING.md",
     "THIRD_PARTY_NOTICES.md",
     "requirements.txt",
@@ -30,6 +31,7 @@ FILE_ALLOWLIST = (
     "docs/ARCHITECTURE_DECISIONS.md",
     "docs/FAILURE_CASES.md",
     "docs/ROLEPLAY_DEVELOPMENT_MANUAL.md",
+    "docs/history/tendou_kei_legacy_schema_v1.yaml",
     "releases/kei-v1.1-public/README.md",
 )
 CODE_DIRS = (
@@ -88,7 +90,7 @@ def export(output: Path) -> dict:
         checksums.append(f"{digest}  {relative.as_posix()}")
     manifest = {
         "snapshot_id": SNAPSHOT_ID,
-        "release_name": "Kei v1.1",
+        "release_name": "Kei v1.1 — Public Architecture Snapshot",
         "source_worktree_head": SOURCE_WORKTREE_HEAD,
         "frozen_source_status": "unverified: no local kei-v1.1 tag or frozen package",
         "source_note": "Independent public derivative from inspected working tree; current 78 evidence rows are not asserted to be the frozen 32-row release",
