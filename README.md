@@ -41,7 +41,7 @@ python tools/export_public_kei.py --output /path/outside/worktree/kei-v1.1-publi
 
 导出目录必须事先不存在；脚本采用明确白名单，不携带 `.git`，并生成 `PUBLIC_MANIFEST.json` 和 `checksums.sha256`。运行 API 可用 `uvicorn web.server:app --host 127.0.0.1 --port 8000`，打开 `/docs` 查看接口；根路径明确提示前端未打包。真实生成需要自行配置 `.env`、模型及可用的 evidence/知识数据；本包的 Scene Markdown 不会自动转换为运行时 JSONL。
 
-本工作受 [ChatHaruhi](https://github.com/LC1332/Chat-Haruhi-Suzumiya) 的场景语料方法启发，也与角色卡、Lorebook、SillyTavern 等生态中的上下文供给方式有相似处；不主张首创 Scene RAG 或贴图选择。第三方与权利边界见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。作者尚未为自有代码选择 MIT 或 Apache-2.0 等许可证；在许可证及二创素材授权范围确认前，不应假定本仓库授予再分发许可。
+本工作受 [ChatHaruhi](https://github.com/LC1332/Chat-Haruhi-Suzumiya) 的场景语料方法启发，也与角色卡、Lorebook、SillyTavern 等生态中的上下文供给方式有相似处；不主张首创 Scene RAG 或贴图选择。第三方与权利边界见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 ## AI-Assisted Development
 
